@@ -1,10 +1,8 @@
 my name is sierra, and i am your trainer!
 my name is sierra again, and i play the ukulele!
 my name is ryan, and i play bass
-<<<<<<< HEAD
 my name is christophe, I speak french
-=======
 my name is ricardo, and I live in a pineapple under the sea
 My name is Adenike, and I play chess
 My name is Steven and I play soccer.
->>>>>>> c7e686d4c646546d6a87094073e55977baae51a7
+
