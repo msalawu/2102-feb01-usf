@@ -1,6 +1,8 @@
 my name is sierra, and i am your trainer!
 my name is sierra again, and i play the ukulele!
 my name is ryan, and i play bass
+my name is roger, and I play video games!
+my name is christophe, I speak French
 my name is ricardo, and I live in a pineapple under the sea
 My name is Adenike, and I play chess
 My name is Steven and I play soccer.
@@ -18,5 +20,7 @@ My name is Cody, and I am learning to code!git ad
 >>>>>>> 12314251c11356b9f47ae3dfc980c2b8be46a497
 =======
 My name is Kerbie and I love to read.
+My name is Crystal and I like to cook.
+
 
 >>>>>>> a00fb2b6765f93e50b4b80bd3ff97e48c49a264f
