@@ -6,7 +6,6 @@ my name is christophe, I speak French
 my name is ricardo, and I live in a pineapple under the sea
 My name is Adenike, and I play chess
 My name is Steven and I play soccer.
-My name is Cody, and I am learning to code!git ad
 My name is sabrina and I am new at revature updated last
 My name is Cody, and I am learning to code!git ad
 My name is Kerbie and I love to read.
@@ -16,3 +15,4 @@ My name is Adenike, using the command line
 My name is Mojid and I love photography
 My name is Milo and I like mountain climbing
 My name is Jason and I like to play the drums.
+My name is Akeem & I am excited to be a digital nomad. 
