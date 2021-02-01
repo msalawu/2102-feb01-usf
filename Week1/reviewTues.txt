@@ -1,0 +1,129 @@
+why java?
+	- object-oriented
+	- libraries and frameworks, easy to use
+	- JUnit, standardized test-driven development (TDD)
+	- maintainable, scalable, extensible, readable, modular
+	- write once, run anywhere (WORA)
+	- multi-threaded
+	- high-level (readable, closer to English than machine code)
+	- staticly/strongly typed
+	- manages memory for you (garbage collection)
+	- pass by value (rather than pass by reference)
+jvm/jre/jdk
+	- jdk: Java Development Kit
+		- necessary for developing in Java
+		- includes the compiler
+	- jre: Java Runtime Environment
+		- necessary for running Java applications
+		- includes the core classes and libraries of Java
+	- jvm: Java Virtual Machine
+		- allows Java to be executed; different OS have different implementations
+		  to allow WORA
+		- includes the class loader, garbage collection
+data types
+	- primitives (exist on the stack)
+		- boolean
+		- byte
+		- short
+		- char
+		- int
+		- float
+		- long
+		- double
+	- reference types (created with the "new" keyword, exist in the heap)
+		- String
+		- Object
+		- Integer
+		- Float
+		- "Wrappers" wrapper classes = reference version of primitive types
+methods
+	- main method
+		- public static void main(String[] args)
+		- where the application starts running
+		- static: associated with the class, exists before an object of the class is instantiated
+	- access modifier, other modifiers, return type, name, parameters
+		- one return type
+		- as many parameters as you want
+	- calling a method
+		- methodName(parameters);
+	- returning something
+		- return objectName;
+	- to call a non-static method from within main, we need to instantiate an object of the class
+		- HelloWorldApp app = new HelloWorldApp();
+		- app.nonStaticMethod();
+constructors
+	- default: the constructor that is created automatically/implicitly when you do not specify a no-arguments constructor
+	- no-arguments: a constructor that has no parameters, sets default values for fields
+		- public ClassName() { }
+	- overloaded: a constructor that does have parameters
+		- public ClassName(String name, Integer i) { }
+	- constructors are a type of method that has NO return type (not even void)
+		- they are called using the "new" keyword
+		- Cat c = new Cat();
+		- Cat c = new Cat("Fluffy", 7);
+variable arguments (varargs)
+	- a unique type of parameter that allows any number of arguments to be passed in
+	- it must be the last parameter in the method's parameter list
+	- public void methodName(String str, Cat c, Integer... i) { }
+	- methodName("string", cat);
+	- methodName("string", cat, intArray);
+	- methodName("string", cat, 5, 6, 2, 4, 8, 9);
+packages/imports
+	- import statements allow you to use code from other packages
+		- import java.util.List;
+		- import com.revature.cats.*; // imports everything from the cats package
+	- packages allow you to organize your classes in a way that makes sense
+Object class
+	- this is the parent class of ALL classes in Java
+	- methods such as hashcode, equals, and toString that are typically overriden
+shortcut for getters/setters, overriding Object methods in Eclipse
+	- alt + shift + s
+	- right click -> source
+access modifiers
+	- public: can be accessed anywhere in the application
+	- protected: can be accessed anywhere within the same package and by subclasses
+	- default: can be accessed only within the same package
+	- private: can be accessed only within the same class
+control flow
+	- conditional statements
+		- if/else, switch, ternary (condition ? true : false)
+	- loops
+		- while, for, do-while, enhanced for
+variable scopes
+	- reminder: these are different from access modifiers
+	- the lifetime of a variable
+	- static/class
+		- variables live throughout the application's lifetime
+		- begin when classes are loaded (before the main method executes)
+		- end at the end of the application
+	- instance/object
+		- variables live as long as a particular instance of a class (object)
+		- they begin when the object is instantiated, end when the object is "garbage collected"
+			(after the object's memory location is no longer referenced)
+	- method
+		- variables live as long as the method is executing
+		- this might be parameters or variables that are declared during the method's execution
+	- loop/block/local
+		- variables live as long as the current iteration of a loop, or as long as the execution of a block
+		- this might be a variable declared within a loop or conditional statement
+		- this might be a variable declared in a static or instance block
+static/instance blocks
+	- static block runs when the class is loaded (before the main method, before any objects are instantiated)
+		- this is associated with the class itself so it only runs once during the application
+		- static { }
+	- instance block runs when an object of the class is instantiated (before the constructor)
+		- they are associated with that particular object/instance
+		- they are used for anything that needs to occur regardless of which constructor is called (no-args, overloaded)
+arrays
+	- contiguous blocks of memory allowing you to group entities together
+	- because they are contiguous in memory, you have to specify their size upon
+	  instantiation
+	- int[] intArr = new int[5]; // creates an array of five ints
+	- int[] intArr = {1, 2, 3}; // creates an array of three ints with the values already
+	  initialized
+	- accessing elements of the array uses the name of the array and the index of the
+	  element (starting at 0)
+		- intArr[1] would get the second element in intArr
+	- you can iterate through them easily with enhanced for loops
+	- Arrays utility class
+		- Arrays.fill(intArr, 20); Arrays.sort(intArr); Arrays.toString(intArr);
