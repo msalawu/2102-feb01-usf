@@ -5,8 +5,13 @@ my name is ricardo, and I live in a pineapple under the sea
 My name is Adenike, and I play chess
 My name is Steven and I play soccer.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 My name is Cody, and I am learning to code!git ad
 
 >>>>>>> b69ce58e9268751b39144dcf93d26a1a66949cbc
 
+=======
+My name is sabrina and I am new at revature updated last
+My name is Cody, and I am learning to code!git ad
+>>>>>>> 12314251c11356b9f47ae3dfc980c2b8be46a497
