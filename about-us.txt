@@ -4,4 +4,9 @@ my name is ryan, and i play bass
 my name is ricardo, and I live in a pineapple under the sea
 My name is Adenike, and I play chess
 My name is Steven and I play soccer.
+<<<<<<< HEAD
+=======
+My name is Cody, and I am learning to code!git ad
+
+>>>>>>> b69ce58e9268751b39144dcf93d26a1a66949cbc
 
