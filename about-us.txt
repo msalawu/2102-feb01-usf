@@ -24,3 +24,4 @@ My name is Mark and Today I learned about Git.
 My name is Mark and I can fold origami cranes using only my left hand
 My name is McCaulley, and I enjoy cycling.
 I am David and I love git!
+My name is Rose, and I'm now learning git
