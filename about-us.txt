@@ -21,6 +21,11 @@ My name is Cody, and I am learning to code!git ad
 =======
 My name is Kerbie and I love to read.
 My name is Crystal and I like to cook.
+<<<<<<< HEAD
 
 
 >>>>>>> a00fb2b6765f93e50b4b80bd3ff97e48c49a264f
+=======
+My name is Kurt and I am learning to play guitar
+My name is Adenike, using the command line
+>>>>>>> 733697374fde7a69323871ab92b5598c35605fe2
