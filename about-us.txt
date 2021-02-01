@@ -14,4 +14,9 @@ My name is Cody, and I am learning to code!git ad
 =======
 My name is sabrina and I am new at revature updated last
 My name is Cody, and I am learning to code!git ad
+<<<<<<< HEAD
 >>>>>>> 12314251c11356b9f47ae3dfc980c2b8be46a497
+=======
+My name is Kerbie and I love to read.
+
+>>>>>>> a00fb2b6765f93e50b4b80bd3ff97e48c49a264f
