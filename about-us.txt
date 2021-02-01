@@ -6,26 +6,12 @@ my name is christophe, I speak French
 my name is ricardo, and I live in a pineapple under the sea
 My name is Adenike, and I play chess
 My name is Steven and I play soccer.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 My name is Cody, and I am learning to code!git ad
-
->>>>>>> b69ce58e9268751b39144dcf93d26a1a66949cbc
-
-=======
 My name is sabrina and I am new at revature updated last
 My name is Cody, and I am learning to code!git ad
-<<<<<<< HEAD
->>>>>>> 12314251c11356b9f47ae3dfc980c2b8be46a497
-=======
 My name is Kerbie and I love to read.
 My name is Crystal and I like to cook.
-<<<<<<< HEAD
-
-
->>>>>>> a00fb2b6765f93e50b4b80bd3ff97e48c49a264f
-=======
 My name is Kurt and I am learning to play guitar
 My name is Adenike, using the command line
->>>>>>> 733697374fde7a69323871ab92b5598c35605fe2
+My name is Mojid and I love photography
+My name is Milo and I like mountain climbing
