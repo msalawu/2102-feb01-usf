@@ -185,6 +185,7 @@ public class JavaBasics {
 			ch.eatCheese();
 		}
 		
+		mozz.eatCheese();
 		mozz.eatCheese("spoon");
 		((Mozzarella) mozzCheese).eatCheese("fork");
 	}
