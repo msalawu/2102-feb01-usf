@@ -8,7 +8,6 @@ public class Breed {
 		id = 0;
 		name = "";
 	}
-	
 	public Integer getId() {
 		return id;
 	}
