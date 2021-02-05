@@ -2,6 +2,8 @@ package com.revature.services;
 
 import java.util.Set;
 
+import org.apache.log4j.Logger;
+
 import com.revature.beans.Cat;
 import com.revature.beans.Person;
 import com.revature.beans.Status;
@@ -15,6 +17,8 @@ public class CatServiceImpl implements CatService {
 	private CatDAO catDao;
 	private PersonDAO personDao;
 	
+	private static Logger log = Logger.getLogger(CatServiceImpl.class);
+	
 	public CatServiceImpl() {
 		catDao = DAOFactory.getCatDAO();
 		personDao = DAOFactory.getPersonDAO();
@@ -22,8 +26,7 @@ public class CatServiceImpl implements CatService {
 
 	@Override
 	public Integer addCat(Cat c) {
-		// TODO Auto-generated method stub
-		return null;
+		return catDao.add(c).getId();
 	}
 
 	@Override
@@ -33,8 +36,7 @@ public class CatServiceImpl implements CatService {
 
 	@Override
 	public Set<Cat> getAllCats() {
-		// TODO Auto-generated method stub
-		return null;
+		return catDao.getAll();
 	}
 
 	@Override
@@ -44,19 +46,23 @@ public class CatServiceImpl implements CatService {
 
 	@Override
 	public void updateCat(Cat c) {
-		// TODO Auto-generated method stub
-		
+		if (getCatById(c.getId()) != null)
+			catDao.delete(c);
+		else
+			log.debug("Cat didn't exist in the database.");
 	}
 
 	@Override
 	public void removeCat(Cat c) {
-		// TODO Auto-generated method stub
-		
+		if (getCatById(c.getId()) != null)
+			catDao.delete(c);
+		else
+			log.debug("Cat didn't exist in the database.");
 	}
 
 	@Override
 	public void adoptCat(Person p, Cat c) throws CatAlreadyAdoptedException {
-		if (("Adopted").equals(c.getStatus().getName()))
+		if ("Adopted".equals(c.getStatus().getName()))
 			throw new CatAlreadyAdoptedException();
 		
 		Status s = new Status();

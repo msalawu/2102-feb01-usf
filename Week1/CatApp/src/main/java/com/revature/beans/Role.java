@@ -5,8 +5,8 @@ public class Role {
 	private String name;
 	
 	public Role() {
-		id = 1;
-		name = "user";
+		id = 2;
+		name = "User";
 	}
 	
 	public Integer getId() {
