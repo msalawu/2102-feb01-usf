@@ -1,0 +1,149 @@
+Garbage Collection
+	- Java's way of managing memory for you
+	- when an object in memory is no longer referenced by any variable,
+	  you can't use it anymore, so it becomes eligible for garbage
+	  collection
+	- the garbage collector may then come along and free up that
+	  memory location
+	- you can't MAKE the garbage collector do its job. it'll come along
+	  when it feels like it. but you can encourage it using System.gc()
+		- this just makes it a little more vigilant, but it still
+		  does what it wants
+	- right before an object is garbage collected, its finalize()
+	  method is called
+		- this method is basically just a courtesy call for
+		  tying up loose ends before the object is removed
+		  from memory, but it doesn't work as expected
+		- the method was deprecated in java 9
+
+Breaks/Continues/Labels
+	- part of control flow
+	- the break keyword stops the nearest loop from iterating further
+	  and does not complete following code in the current iteration
+	- the continue keyword does not complete the current iteration,
+	  but it skips to the next iteration
+	- labels can be used to specify which loop you want to break or
+	  continue
+		- labelName: while (condition)
+		- ...
+		- break labelName; or continue labelName;
+
+Strings, String API
+	- strings are immutable character arrays, essentially
+		- this means you can't change the value that is at the
+		  memory location; if you change the string, you are
+		  creating a new object at a different location in memory
+	- the string class also has some static utility methods
+		- format
+		- valueOf
+	- if you want to have a mutable string, you can use a String
+	  alternative:
+		- StringBuilder: mutable, fast, not thread-safe
+		- StringBuffer: mutable, slow, thread-safe
+
+OOP
+	- abstraction
+		- when an entity provides an interface to be used without
+		  providing implementation details
+		- interfaces:
+			- all fields are implicitly public, static, final
+			- all methods are implicitly abstract
+			- you can have implemented methods by using the
+			  default modifier (default implementation)
+			- cannot be instantiated
+			- can extend other interfaces
+			- can be implemented by abstract classes and
+			  concrete (regular) classes
+			- a class can implement multiple interfaces
+		- abstract classes:
+			- fields are normal, methods are normal
+			- can have abstract methods (using the abstract
+			  modifier)
+			- cannot be instantiated
+			- can be extended by other abstract classes and
+			  concrete (regular) classes
+	- inheritance
+		- when an entity receives state and/or behavior from a
+		  parent entity
+		- includes implements and extends relationships - anything
+		  that is a sub/super class relationship
+	- encapsulation
+		- when an entity restricts access to parts of itself to
+		  only specific entities
+		- a fully encapsulated class or Java Bean has all private
+		  fields and uses getter and setter methods to access them,
+		  and only has a no-args constructor (no overloaded)
+	- polymorphism
+		- when an entity acts as another entity seamlessly
+		- ex. a kitten is a kitten, but it is ALSO a cat
+			- might handle some things differently than a cat
+			  but can act as a cat
+
+Exceptions
+	- exceptions represent unexpected behavior in your application
+		- this is different from errors, which represent a fatal
+		  application state from which the JVM cannot recover
+		- errors: StackOverflowError, OutOfMemoryError, etc.
+	- exceptions and errors both are classes that implement Throwable
+	- there are two types of exception in Java
+		- checked exceptions: checked by the compiler and therefore
+		  are thrown at compile time. must be handled either by
+		  try-catch or throws declaration
+			- ex: FileNotFoundException, IOException,
+			  SQLException, etc.
+			- generally these are exceptions that occur because
+			  of something external to your code
+		- unchecked exceptions: thrown at runtime and generally can
+		  be handled by writing your code differently to prevent
+		  them from occurring to begin with. these extend the
+		  RuntimeException class
+			- ex. ArithmeticException, NullPointerException,
+			  ArrayIndexOutOfBoundsException, etc.
+	- try-catch-finally
+		- the try block includes code that could throw an exception
+		- the catch block specifies the type of exception to catch,
+		  then describes how to handle it
+			- you can have multiple catch blocks
+		- the finally block is optional UNLESS there are no catch
+		  blocks, and always runs no matter what unless the
+		  application exits before it has a chance
+	- throws declaration
+		- this is part of a method signature that comes after the
+		  parameters
+		- basically is a way of telling the calling code that it
+		  needs to handle the exception if it calls this method
+			- you can sort of think of it as a "warning" in
+			  a way, but it forces the calling code to handle
+			  it either with a try catch or another throws
+	- throw keyword
+		- this allows you to manually throw an exception,
+		  especially used for a custom exception
+		- throw new CustomException();
+	- custom exceptions
+		- mostly for semantic purposes
+		- just created by having a class that extends Exception
+
+Collections
+	- Collection: interface in Java
+	- collection: object that stores an object
+	- Collections: class with utility methods for classes that
+		implement Collection
+	- the Collection API: group of Java entities for storing objects
+		- implement Iterable and Collection
+		- List: allows duplicates, retains order of insertion
+		- Set: doesn't allow duplicates, doesn't necessarily
+		  retain order of insertion
+		- Queue: first in, first out (FIFO)
+	- List
+		- ArrayList: backed by an array, better performance for
+		  retrieving elements
+		- LinkedList: uses nodes that reference previous and next
+		  element, better performance for adding elements near the
+		  beginning or end
+	- Set
+		- HashSet: backed by a hash table, can't be sorted (have
+		  their own sorting)
+		- TreeSet: backed by a tree, can be sorted
+	- Queue
+		- Deque: "queue that goes both ways"
+		- LinkedList

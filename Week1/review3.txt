@@ -1,0 +1,158 @@
+two-dimensional arrays
+	- a nested array, an array of arrays, rows/columns
+	- rectangular/square
+		- [ 1, 2, 3, 4 ]
+		  [ 2, 3, 4, 5 ]
+		  [ 6, 7, 8, 9 ]
+		  [ 4, 3, 2, 1 ]
+	- jagged
+		- [ 1, 2, 3, 4, 5 ]
+		  [ 3, 4, 5 ]
+		  [ 1 ]
+		  [ 9, 8, 7, 6, 5, 4, 3, 2 ]
+		  [ 1, 2, 3, 4 ]
+	- iterating
+		// using enhanced for loops
+		int[][] arr = new int[5][5];
+		for ( int[] row : arr ) {
+			for ( int i : row ) {
+				System.out.print(i);
+			}
+		}
+		// using regular for loops
+		for (int row = 0; row < 5; row++) {
+			for (int col = 0; col < 5; col++) {
+				System.out.print(arr[row][col]);
+			}
+		}
+	- Object[][] arr = new Object[6][6];
+	  boolean[][] arr2 = new boolean[7][7];
+	- int[][] arr3 = new int[5][];
+	  // then initialize the size of each row
+generics
+	- the ability to have a type that is set at compile time
+		- compiler scrubs the generic types and replaces them with the specified types
+	- public class GenericClass <T> { 
+		public void takeEntity(T t) { }
+		public T getEntity() { }
+	- GenericClass<Cat> catClass = new GenericClass<Cat>();
+	- List<Integer> list1 = new ArrayList<Integer>();
+	  list1.add(5);
+	- List<Cat> list2 = new ArrayList<Cat>();
+	  list2.add(new Cat());
+	- "T" or whatever you choose to name your generic is a placeholder
+	- good for having more reusable code
+		- when you are writing the same methods where the only difference is the type, generics allow you to avoid rewriting the code
+	- restrict the types like so:
+	  public class Calculator <T extends Number> { }
+		- can use the "instanceof" keyword in method implementations if the type changes the implementation
+		- if (t instanceof Integer) { }
+		  else if (t instanceof Cat) { }
+	- specifying multiple generics in the same class (like a map with key-value pairs)
+	  Map <K, V>
+	  Map<Integer, String> map = new HashMap<Integer, String>();
+	- see generic dao example
+maps
+	- a collection that stores key-value pairs
+	- does NOT implement iterable, so you can't use an enhanced for loop with maps
+	- you can get a set of the keys and use that to iterate with an enhanced for loop (mapName.keySet())
+scanner
+	- Scanner allows you to read an input stream, usually the console input
+	- you should only have one Scanner open, and it should always be closed at the end of the application
+		- scanner.close()
+	- Scanner scan = new Scanner(System.in);
+	- there are several methods for reading the information
+		- .next(), .nextLine(), .nextInt(), etc.
+		- you should typically use nextLine and parse from there if necessary, as it prevents
+		  extra characters like newline characters from being left in the buffer and causing
+		  unexpected behavior
+lambdas/functional interfaces
+	- functional interfaces are interfaces that only have one abstract method
+	- some examples that exist in Java are Runnable, Predicate, Supplier, Consumer
+	- lambdas are implementation of functional interfaces
+		- where classes are made for reusable code, lambdas are good for "single-use" code
+	- a lambda is just a shorthand for a class that implements the one abstract method of the functional interface
+		- doesn't require you to instantiate an object of the class separately
+		- allows you to avoid cluttering the namespace/code base with a class that only has a single purpose
+	- FunctionalInterfaceName varName = (parameterNames) -> valueToReturn;
+	- FunctionalInterfaceName varName = (parameterNames) -> {
+		// things
+		// stuff
+		return something;
+	  };
+	- calling the method on the lambda: varName.methodName(parameter);
+	- Predicate<T>
+		- functional interface whose method is .test(T t);
+		- returns a boolean
+		- sort of acts like an assertEquals in practice
+		- also includes default method implementations .and, .or, .negate
+		- using the other methods you can do "Predicate chaining"
+			- greaterThanTen.and(lessThanTwenty).test(15);
+	- Supplier<T>
+		- functional interface whose method is .get()
+		- returns an object
+		- can loosely act like a factory
+	- Consumer<T>
+		- functional interface whose method is .accept(T t)
+		- accepts an object
+		- used to see "side effects" of accepting an object for something, or passing an object somewhere
+	- see example on gitlab for the class that is doing the exact same thing as the lambda
+threads
+- sequence of instructions being processed, or code that is currently running
+	- multithreading is having multiple sequences of instructions running simultaneously
+	- JVM handles threads for us, we have the Java Thread API
+	- creating a thread, you can have a class that implements Runnable or that extends Thread
+		- when implementing Runnable, you have to instantiate the thread like so:
+			- Thread exampleThread = new Thread(new MyRunnableImpl());
+			- this is because you need to have the Thread.start() method to run your threads simultaneously
+			- your code for the thread goes into an implementation (override) of the .run() method
+		- when extending Thread, you have to be careful not to override the .start() method because you can prevent them from running simultaneously
+			- MyThread exampleThread = new MyThread();
+	- thread.start() calls the .run() method that you implement/override
+	- methods in the Thread API
+		- .sleep(1000) make the thread pause for the specified time (in ms)
+		- .join() makes the thread wait for the other thread before continuing
+		- .isAlive() returns a boolean for whether the thread is alive (running)
+		- .getState() returns the Thread state
+	- Thread states
+		- RUNNABLE: active
+		- NEW: hasn't started yet
+		- TIMED_WAITING: sleeping using the .sleep method or timed .join
+		- WAITING: waiting for some condition/resource/other thread
+		- BLOCKED: in a synchronized method
+		- TERMINATED: the thread has completed running
+singleton design pattern
+	- is used to ensure that there is only one instantiation of a class
+	- enforced with the following conditions in the singleton class:
+		- private constructor: we can't instantiate the class/an object using the "new" keyword because that calls the constructor
+			- makes it so that the class cannot have children because child constructors call the parent constructor implicitly
+		- private static instance of the singleton class: being static enforces that there is only one because
+			it is associated with the class
+		- public static synchronized accessor method: this is what allows us to get our private static instance, within the code
+			it makes sure that it is always returning the same one rather than creating new ones, it is synchronized to prevent
+			different threads from accessing it at the same time and potentially creating an extra instance
+	- good to use for objects that you only want to exist once, such as a Scanner or a database Connection
+factory design pattern
+	- is used to return/create an implementation of a specified interface
+	- used when the implementation doesn't matter or depends on different conditions that may not be available to the calling class
+	- enforces abstraction because you get an implementation without knowing which one it is; forced to code to the interface
+application setup
+	- beans/entities/models
+		- our classes defining the types of objects we'll be using in our application
+		- examples: Cat, Person, Hero, Enemy
+	- data access objects (DAOs)
+		- our classes that actually interact with the database directly (through JDBC) or data in general (Collections)
+		- this is the only layer that interacts with the data directly
+		- we use interfaces to define the methods that we will use (CRUD operations)
+			- create, read, update, delete
+			- implement those interfaces for different types of data access (Collections, Oracle SQL, mySQL, PostgreSQL, etc.)
+	- services
+		- this deals with combining the data access with the actual functionality desired by the user
+		- interacts with the DAO layer and the "front" layer
+		- might combine things from different DAOs
+			- example: adoptCat method, used the PersonDAO to add the Cat to their cats, the CatDAO to update adopted status
+	- "front"/controller
+		- this interacts with the user (in the case of a command line application) or the front end
+		- deals more directly with user stories, logIn method, register method, adoptCat method
+			- these methods deal both with getting input, sending/retrieving info through the service layer, giving info to the user/front end
+	- package structure example: com.revature.beans, com.revature.data, com.revature.services, com.revature.controller
