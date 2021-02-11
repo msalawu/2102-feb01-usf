@@ -1,0 +1,122 @@
+postgreSQL cont'd
+	- scalar and aggregate functions
+		- scalar: single input, single output
+			- round, trim, substr, length, upper, lower, concat
+		- aggregate: group of inputs, single output
+			- count, avg, sum, max, min
+			- GROUP BY: used with aggregate functions for data analysis
+			- e.g. SELECT col1, COUNT(col2) FROM table GROUP BY
+			  col1;
+			- HAVING: used with aggregate functions for data analysis
+			- e.g. SELECT COUNT(col1) FROM table GROUP BY col1
+			  HAVING col2 = value;
+	- constraints
+		- constraints are rules set up for columns that allow the
+		  database to restrict certain actions
+		- foreign key constraint (discussed above): uses the
+		  REFERENCES keyword. for composite keys, constraint is
+		  defined after the columns are defined:
+			- FOREIGN KEY (first_id, second_id) REFERENCES
+			  other_table (first_id, second_id)
+		- PRIMARY KEY constraint: for composite keys, constraint is
+		  defined after the columns are defined:
+			- PRIMARY KEY(first_id, second_id)
+		- UNIQUE constraint: does not allow duplicate values in this
+		  column; good for things like usernames
+		- NOT NULL constraint: does not allow anything in the column
+		  to be null
+		- CHECK constraint: allows you to set a condition for the
+		  column, such as CHECK(NUM > 10)
+	- aliases
+		- aliases give things a temporary name for the purpose of
+		  queries or result sets.
+		- table aliases allow complicated queries to be made more
+		  succinct and potentially easier to read
+			- e.g. SELECT A.ID, A.NAME, B.NAME FROM TABLE_A AS
+			  A JOIN TABLE_B AS B ON A.ID = B.ID;
+		- column aliases allow result sets to be more readable and
+		  more practical, and they also allow nested queries to be
+		  easier to read as well
+			- e.g. SELECT A.NAME AS "Employee", B.NAME AS "Boss"
+			  FROM TABLE_A AS A JOIN TABLE_A AS B ON A.BOSS_ID =
+			  B.ID;
+multiplicity relationships
+	- one-to-one: your standard relationship where exactly one
+	  row in the first table references one row in another table
+		- example: one user has one address, and that
+		  address is not shared by any other user
+	- one-to-many/many-to-one: exactly one row in one table is
+	  referenced by potentially many rows in another table
+		- example: one cat only has one breed, but that
+		  breed may be applied to many cats. (same thing
+		  applies to status)
+		- example: one cat only has one owner, but that
+		  owner may have many cats.
+	- many-to-many: several rows in one table can reference
+	  several rows in another table. usually a multiplicity
+	  table is created for this to allow it to be used more like
+	  two one-to-many relationships (easier to work with.)
+		- example: one cat can have many special needs,
+		  AND those special needs can be related to many
+		  different cats.
+database normalization (overview)
+	- the purpose of database normalization is to decrease data
+	  redundancy and increase data integrity. it is part of E.F.
+	  Codd's relational model.
+	- database normalization makes your database drastically
+	  more maintainable, as small changes do not need to break
+	  everything - things can be inserted and removed fairly
+	  easily.
+	- there are guidelines for normalizing a database, and these
+	  go up in steps as the database becomes more normalized.
+		- in most cases, the goal is to reach 3NF, or "third
+		  normal form."
+	- UNF: unnormalized form
+		- primary keys, no repeating groups
+	- 1NF: first normal form
+		- UNF + atomic columns (only one value in a cell)
+	- 2NF: second normal form
+		- 1NF + no partial dependencies (fields must depend on
+		  the entirety of every candidate key)
+	- 3NF: third normal form
+		- 2NF + no transitive dependencies (fields must only
+		  depend on candidate keys)
+JDBC
+	- JDBC stands for Java Database Connectivity. it is a Java API for
+	  connecting to a database. (java.sql library)
+	- to use JDBC, you must include the appropriate implementation for
+	  the DBMS you are using. (i.e. PostgreSQL)
+		- this will be included as a Maven dependency in the
+		  pom.xml file:
+	https://mvnrepository.com/artifact/org.postgresql/postgresql/42.2.14
+	- steps in setting up JDBC:
+		- include Maven dependency in pom.xml
+		- set up database properties
+		- set up ConnectionUtil to load properties
+	- important JDBC interfaces/classes:
+		- Connection: this represents the connection to the database
+			- setAutoCommit(boolean)
+			- createStatement()
+			- prepareStatement(sql, key)
+			- prepareStatement(sql)
+			- commit()
+			- rollback()
+			- close()
+		- Statement: this represents a SQL statement, best for
+		  statements that require no user input because they do not
+		  protect from SQL injection
+			- executeQuery(sql)
+		- PreparedStatement: this represents a SQL statement in
+		  which any inserted parameters are processed before actual
+		  execution to avoid SQL injection.
+			- setInt(index, value)
+			- setString(index, value)
+			- etc.
+			- executeUpdate()
+			- getGeneratedKeys()
+			- executeQuery()
+		- ResultSet: this represents the results of a query.
+			- next()
+			- getInt(columnName)
+			- getString(columnName)
+			- etc.
