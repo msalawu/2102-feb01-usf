@@ -1,0 +1,20 @@
+2021-02-05 15:34:38 INFO  CatAppController:42 - User is exiting the application.
+2021-02-05 15:35:41 INFO  CatAppController:36 - User is registering an account.
+2021-02-05 15:35:43 INFO  CatAppController:39 - User is logging in.
+2021-02-05 15:35:46 INFO  CatAppController:42 - User is exiting the application.
+2021-02-05 16:30:17 INFO  CatAppController:38 - User is registering an account.
+2021-02-05 16:30:29 DEBUG CatAppController:74 - Submitting new user to the database...
+2021-02-05 16:31:51 INFO  CatAppController:38 - User is registering an account.
+2021-02-05 16:32:03 DEBUG CatAppController:74 - Submitting new user to the database...
+2021-02-05 16:32:03 DEBUG CatAppController:77 - Person [id=2, username=celeste, password=pass, cats=[], role=Role [id=2, name=User]]
+2021-02-05 16:32:51 INFO  CatAppController:42 - User is logging in.
+2021-02-05 16:32:54 DEBUG CatAppController:108 - User logged in successfully.
+2021-02-05 16:34:15 INFO  CatAppController:38 - User is registering an account.
+2021-02-05 16:34:19 DEBUG CatAppController:74 - Submitting new user to the database...
+2021-02-05 16:34:19 DEBUG CatAppController:77 - Person [id=2, username=celeste, password=pass, cats=[], role=Role [id=2, name=User]]
+2021-02-05 16:34:20 INFO  CatAppController:38 - User is registering an account.
+2021-02-05 16:34:25 DEBUG CatAppController:74 - Submitting new user to the database...
+2021-02-05 16:34:25 WARN  CatAppController:82 - User tried to register with a non-unique username.
+2021-02-05 16:34:38 DEBUG CatAppController:74 - Submitting new user to the database...
+2021-02-05 16:34:38 DEBUG CatAppController:77 - Person [id=3, username=aweifhwiof, password=woeirjgoiwerjg, cats=[], role=Role [id=2, name=User]]
+2021-02-05 16:34:43 INFO  CatAppController:46 - User is exiting the application.
