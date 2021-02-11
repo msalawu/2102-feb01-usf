@@ -1,0 +1,54 @@
+Transactions
+	- ACID properties: guidelines for transactions
+		- A: Atomic. the transaction cannot be reasonably broken
+		  down into further transactions - if part of the
+		  transaction fails, the entire thing must fail
+		- C: Consistent. data in the database must be valid and
+		  logical before and after the transaction occurs, whether
+		  it succeeds or fails.
+		- I: Isolated. the order that transactions execute does not
+		  affect them - their functions are isolated from one
+		  another.
+		- D: Durable. if failure occurs (i.e. the database crashes,
+		  server goes down), the database will still have committed
+		  data stored.
+		- example: adopting a cat. this transaction requires that
+		  the cat's status is updated, and it also requires that the
+		  cat is added to the person's owned cats. this is ATOMIC
+		  because if you break it down any further, it no longer
+		  would complete all tasks necessary for adopting a cat. it
+		  is CONSISTENT if we make sure to only commit after both
+		  parts are completed and successful - if one part fails,
+		  we must rollback. the data would be inconsistent if we did
+		  not do this, because if the failure occurred when updating
+		  the person's cats, the cat would now have a status of
+		  "adopted" but it would have no owner in the database.
+		  ISOLATED and DURABLE are not directly relevant to single
+		  transactions.
+	- transaction isolation levels
+		- different DBMS may provide different levels.
+		  postgres has the advantage of NOT allowing the
+		  lowest isolation level. each level solves a
+		  particular "anomaly" from the previous level.
+		1. Read Uncommitted: not provided by PostgreSQL.
+		   all transactions are running at once, one of them
+		   could potentially read uncommitted data and act
+		   on it even though it could end up being rolled
+		   back. this is called "Dirty Read"
+		2. Read Committed: only committed data can be read
+		   during transactions. however, one could read data
+		   that then proceeds to get changed right after,
+		   so the data is no longer relevant. this is called
+		   "Non-repeatable Read"
+		3. Repeatable Read: transactions have to wait for
+		   other transactions to commit if they are acting
+		   on rows that the transaction needs. basically,
+		   if it needs to read a row that is already in use
+		   by another transaction, it must wait until that
+		   transaction has committed. however, if the
+		   transaction adds rows that must be affected by
+		   another transaction, the transaction wouldn't
+		   know this because it wouldn't know to "wait" for
+		   anything. this is called "Phantom Read"
+		4. Serializable: allows no concurrency - only one
+		   transaction can ever run at a time.
