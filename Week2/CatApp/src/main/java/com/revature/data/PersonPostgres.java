@@ -3,15 +3,21 @@ package com.revature.data;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.HashSet;
 import java.util.Set;
+
+import org.apache.log4j.Logger;
 
 import com.revature.beans.Cat;
 import com.revature.beans.Person;
 import com.revature.exceptions.NonUniqueUsernameException;
+import com.revature.utils.ConnectionUtil;
 
 public class PersonPostgres implements PersonDAO {
-
+	private ConnectionUtil cu = ConnectionUtil.getConnectionUtil();
+	private Logger log = Logger.getLogger(PersonPostgres.class);
+	
 	@Override
 	public Person getById(Integer id) {
 		// TODO Auto-generated method stub
@@ -38,23 +44,23 @@ public class PersonPostgres implements PersonDAO {
 
 	@Override
 	public Person add(Person p) throws NonUniqueUsernameException {
-Person p = null;
+		Person newPerson = null;
 		
 		try (Connection conn = cu.getConnection()) {
 			conn.setAutoCommit(false);
 			String sql = "insert into person values (default, ?, ?, ?)";
 			String[] keys = {"id"};
 			PreparedStatement pstmt = conn.prepareStatement(sql, keys);
-			pstmt.setString(1, t.getUsername());
-			pstmt.setString(2, t.getPassword());
-			pstmt.setInt(3, t.getRole().getId());
+			pstmt.setString(1, p.getUsername());
+			pstmt.setString(2, p.getPassword());
+			pstmt.setInt(3, p.getRole().getId());
 			
 			pstmt.executeUpdate();
 			ResultSet rs = pstmt.getGeneratedKeys();
 			
 			if (rs.next()) {
-				p = t;
-				p.setId(rs.getInt(1));
+				newPerson = p;
+				newPerson.setId(rs.getInt(1));
 				conn.commit();
 			} else {
 				conn.rollback();
@@ -67,7 +73,7 @@ Person p = null;
 			e.printStackTrace();
 		}
 		
-		return p;
+		return newPerson;
 	}
 
 	@Override
