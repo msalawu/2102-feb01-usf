@@ -1,0 +1,19 @@
+create or replace procedure adopt_cat(person_id int, cat_id int) as $$
+declare 
+	current_status int;
+	adopted_status int;
+begin
+	select status_id into current_status from cat where id = cat_id;
+	select id into adopted_status from status where name = 'Adopted';
+
+	if current_status <> adopted_status then
+		insert into person_cat values (person_id, cat_id);
+		update cat set status_id = adopted_status where id = cat_id;
+		--commit;
+	else
+		raise exception 'Cat % is already adopted', cat_id;
+	end if;
+end;
+$$ language plpgsql;
+
+call adopt_cat(2,5);

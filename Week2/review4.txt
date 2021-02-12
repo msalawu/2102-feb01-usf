@@ -1,0 +1,25 @@
+PL/SQL
+	- procedural language SQL
+	- an extension of SQL that adds programmatic functionality
+	- postgres' version is PL/pgSQL
+	- compiled by the database server to allow for more efficient calls
+	  (rather than having to connect and run statements separately from your
+	  back-end server, you can run them at once in your database server)
+	- triggers:
+		- sets of statements that can execute before or after DML
+		- called automatically when specified action takes place
+		- typical example is handling incrementing by pulling a value
+		  from a sequence to be the ID when inserting something
+	- functions
+		- reusable blocks that can be called
+		- can only use DQL, have a return value
+		- should only use "in" parameters so that they can be called
+		  directly within queries
+		- can keep complicated queries more organized
+	- procedures (stored procedures)
+		- reusable blocks that can be called
+		- can use DML, DQL, TCL
+		- can use in, out, and inout parameters
+		- have NO return value
+		- example: adopt_cat procedure
+	- documentation for PL/pgSQL: https://www.postgresql.org/docs/12/plpgsql.html
