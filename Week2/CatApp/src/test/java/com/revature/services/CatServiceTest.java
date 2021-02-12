@@ -14,6 +14,7 @@ import org.junit.jupiter.api.Order;
 import com.revature.beans.Cat;
 import com.revature.beans.Person;
 import com.revature.beans.Status;
+import com.revature.data.DAOFactory;
 import com.revature.data.PersonCollections;
 import com.revature.data.PersonDAO;
 import com.revature.exceptions.CatAlreadyAdoptedException;
@@ -76,7 +77,7 @@ public class CatServiceTest {
 	@BeforeAll
 	public static void setup() {
 		catServ = new CatServiceImpl();
-		personDao = new PersonCollections();
+		personDao = DAOFactory.getPersonDAO();
 		System.out.println("This will happen once before any of the tests");
 	}
 	

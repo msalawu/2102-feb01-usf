@@ -1,5 +1,6 @@
 package com.revature.beans;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Cat {
@@ -11,7 +12,12 @@ public class Cat {
 	private Set<SpecialNeed> specialNeeds;
 	
 	public Cat() {
-		
+		id = 0;
+		name = "Cat";
+		age = 0;
+		breed = new Breed();
+		status = new Status();
+		specialNeeds = new HashSet<>();
 	}
 
 	public Integer getId() {

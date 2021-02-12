@@ -18,3 +18,16 @@
 2021-02-05 16:34:38 DEBUG CatAppController:74 - Submitting new user to the database...
 2021-02-05 16:34:38 DEBUG CatAppController:77 - Person [id=3, username=aweifhwiof, password=woeirjgoiwerjg, cats=[], role=Role [id=2, name=User]]
 2021-02-05 16:34:43 INFO  CatAppController:46 - User is exiting the application.
+2021-02-12 14:49:08 INFO  CatAppController:43 - User is registering an account.
+2021-02-12 14:49:11 DEBUG CatAppController:118 - Submitting new user to the database...
+2021-02-12 14:49:56 INFO  CatAppController:43 - User is registering an account.
+2021-02-12 14:49:59 DEBUG CatAppController:118 - Submitting new user to the database...
+2021-02-12 14:50:01 WARN  CatAppController:126 - User tried to register with a non-unique username.
+2021-02-12 14:50:12 INFO  CatAppController:47 - User is logging in.
+2021-02-12 14:50:17 DEBUG CatAppController:152 - User logged in successfully.
+2021-02-12 14:50:17 DEBUG CatAppController:153 - Person [id=2, username=sierra, password=pass, cats=[Cat [id=11, name=Cat, age=0, breed=Breed [id=1, name=Persian], status=Status [id=2, name=Adopted], specialNeeds=[]], Cat [id=5, name=Lucky, age=7, breed=Breed [id=2, name=Domestic Shorthair], status=Status [id=2, name=Adopted], specialNeeds=[]]], role=Role [id=2, name=User]]
+2021-02-12 14:52:51 INFO  CatAppController:85 - User logged out.
+2021-02-12 14:52:51 INFO  CatAppController:51 - User is exiting the application.
+2021-02-12 14:53:03 INFO  CatAppController:47 - User is logging in.
+2021-02-12 14:53:07 DEBUG CatAppController:152 - User logged in successfully.
+2021-02-12 14:53:07 DEBUG CatAppController:153 - Person [id=2, username=sierra, password=pass, cats=[Cat [id=15, name=Princess, age=5, breed=Breed [id=2, name=Domestic Shorthair], status=Status [id=2, name=Adopted], specialNeeds=[]], Cat [id=11, name=Cat, age=0, breed=Breed [id=1, name=Persian], status=Status [id=2, name=Adopted], specialNeeds=[]], Cat [id=5, name=Lucky, age=7, breed=Breed [id=2, name=Domestic Shorthair], status=Status [id=2, name=Adopted], specialNeeds=[]]], role=Role [id=2, name=User]]

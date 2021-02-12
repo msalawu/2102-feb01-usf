@@ -5,7 +5,7 @@ PL/SQL
 	- compiled by the database server to allow for more efficient calls
 	  (rather than having to connect and run statements separately from your
 	  back-end server, you can run them at once in your database server)
-	- triggers:
+	- triggers
 		- sets of statements that can execute before or after DML
 		- called automatically when specified action takes place
 		- typical example is handling incrementing by pulling a value

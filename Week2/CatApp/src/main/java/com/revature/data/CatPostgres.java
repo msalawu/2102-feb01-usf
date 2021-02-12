@@ -1,5 +1,6 @@
 package com.revature.data;
 
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -15,6 +16,7 @@ import com.revature.beans.Cat;
 import com.revature.beans.Person;
 import com.revature.beans.SpecialNeed;
 import com.revature.beans.Status;
+import com.revature.exceptions.CatAlreadyAdoptedException;
 import com.revature.utils.ConnectionUtil;
 
 public class CatPostgres implements CatDAO {
@@ -23,14 +25,79 @@ public class CatPostgres implements CatDAO {
 
 	@Override
 	public Cat getById(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+		Cat cat = null;
+
+		try (Connection conn = cu.getConnection()) {			
+			// Get the cat object
+			String sql = "select cat_status.id, cat_status.name, age, status_id, status_name, breed_id, "
+					+ "breed.name as breed_name from "
+					+ "(select cat.id, cat.name, age, status_id, breed_id, status.name as status_name from "
+					+ "cat join status on status_id = status.id) as cat_status "
+					+ "join breed on breed_id = breed.id where cat_status.id = ?";
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, id);
+			ResultSet rs = pstmt.executeQuery();
+			
+			if (rs.next()) {
+				cat = new Cat();
+				cat.setId(rs.getInt("id"));
+				cat.setName(rs.getString("name"));
+				cat.setAge(rs.getInt("age"));
+				Breed b = new Breed();
+				b.setId(rs.getInt("breed_id"));
+				b.setName(rs.getString("breed_name"));
+				cat.setBreed(b);
+				Status s = new Status();
+				s.setId(rs.getInt("status_id"));
+				s.setName(rs.getString("status_name"));
+				cat.setStatus(s);
+				cat.setSpecialNeeds(getSpecialNeedsByCatId(cat.getId(), conn));
+			}
+					
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return cat;
 	}
 
 	@Override
 	public Set<Cat> getAll() {
-		// TODO Auto-generated method stub
-		return null;
+Set<Cat> cats = new HashSet<>();
+		
+		try (Connection conn = cu.getConnection()) {
+			String sql = "select cat_status.id, cat_status.name, age, status_id, status_name, breed_id, "
+					+ "breed.name as breed_name from "
+					+ "(select cat.id, cat.name, age, status_id, breed_id, status.name as status_name from "
+					+ "cat join status on status_id = status.id) as cat_status "
+					+ "join breed on breed_id = breed.id";
+			Statement stmt = conn.createStatement();
+			ResultSet rs = stmt.executeQuery(sql);
+			
+			while (rs.next()) {
+				Cat cat = new Cat();
+				cat.setId(rs.getInt("id"));
+				cat.setName(rs.getString("name"));
+				cat.setAge(rs.getInt("age"));
+				Breed b = new Breed();
+				b.setId(rs.getInt("breed_id"));
+				b.setName(rs.getString("breed_name"));
+				cat.setBreed(b);
+				Status s = new Status();
+				s.setId(rs.getInt("status_id"));
+				s.setName(rs.getString("status_name"));
+				cat.setStatus(s);
+				
+				cat.setSpecialNeeds(getSpecialNeedsByCatId(cat.getId(), conn));
+				
+				cats.add(cat);
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return cats;
 	}
 
 	@Override
@@ -152,9 +219,20 @@ public class CatPostgres implements CatDAO {
 	}
 
 	@Override
-	public void adoptCat(Person p, Cat c) {
-		// TODO Auto-generated method stub
-
+	public void adoptCat(Person p, Cat c) throws CatAlreadyAdoptedException {
+		try (Connection conn = cu.getConnection()) {
+			conn.setAutoCommit(false);
+			String sql = "call adopt_cat(?,?)";
+			CallableStatement cstmt = conn.prepareCall(sql);
+			cstmt.setInt(1, p.getId());
+			cstmt.setInt(2, c.getId());
+			cstmt.executeUpdate();
+			conn.commit();
+		} catch (Exception e) {
+			if (e.getMessage().contains("already adopted"))
+				throw new CatAlreadyAdoptedException();
+			e.printStackTrace();
+		}
 	}
 	
 	private boolean addSpecialNeeds(Cat c, Connection conn) throws SQLException {

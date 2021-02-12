@@ -179,7 +179,7 @@ public class CatAppController {
 				System.out.println("Which cat? Type its ID.");
 				input = scan.nextLine();
 				Cat cat = catServ.getCatById(Integer.valueOf(input));
-				if (cat != null && cat.getStatus().getName().equals("Available")) {
+				if (cat != null) { // && cat.getStatus().getName().equals("Available")) {
 					System.out.println(cat);
 					System.out.println("You want to adopt " + cat.getName() + "? 1 for yes, other for no");
 					input = scan.nextLine();

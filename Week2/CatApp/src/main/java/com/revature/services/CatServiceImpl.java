@@ -4,18 +4,23 @@ import java.util.Set;
 
 import org.apache.log4j.Logger;
 
+import com.revature.beans.Breed;
 import com.revature.beans.Cat;
 import com.revature.beans.Person;
 import com.revature.beans.Status;
+import com.revature.data.BreedDAO;
 import com.revature.data.CatDAO;
 import com.revature.data.DAOFactory;
 import com.revature.data.PersonDAO;
+import com.revature.data.StatusDAO;
 import com.revature.exceptions.CatAlreadyAdoptedException;
 
 public class CatServiceImpl implements CatService {
 	// Data Access Object
 	private CatDAO catDao;
 	private PersonDAO personDao;
+	private BreedDAO breedDao;
+	private StatusDAO statusDao;
 	
 	private static Logger log = Logger.getLogger(CatServiceImpl.class);
 	
@@ -60,8 +65,8 @@ public class CatServiceImpl implements CatService {
 			log.debug("Cat didn't exist in the database.");
 	}
 
-	@Override
-	public void adoptCat(Person p, Cat c) throws CatAlreadyAdoptedException {
+	@Deprecated
+	public void oldAdoptCat(Person p, Cat c) throws CatAlreadyAdoptedException {
 		if ("Adopted".equals(c.getStatus().getName()))
 			throw new CatAlreadyAdoptedException();
 		
@@ -75,6 +80,36 @@ public class CatServiceImpl implements CatService {
 		cats.add(c);
 		p.setCats(cats);
 		personDao.update(p);
+	}
+	
+	@Override
+	public void adoptCat(Person p, Cat c) throws CatAlreadyAdoptedException {
+		catDao.adoptCat(p, c);
+	}
+
+	@Override
+	public Set<Breed> getAllBreeds(Breed b) {
+		return breedDao.getAll();
+	}
+
+	@Override
+	public Breed getBreedById(Integer id) {
+		return breedDao.getById(id);
+	}
+
+	@Override
+	public void addBreed(Breed b) {
+		breedDao.add(b);
+	}
+
+	@Override
+	public Set<Status> getAllStatuses(Status s) {
+		return statusDao.getAll();
+	}
+
+	@Override
+	public Status getStatusById(Integer id) {
+		return statusDao.getById(id);
 	}
 
 }
