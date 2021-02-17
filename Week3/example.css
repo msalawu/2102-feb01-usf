@@ -1,0 +1,17 @@
+div {
+    font-family:sans-serif;
+    background-color: aqua;
+    color: pink;
+}
+
+span, p {
+    color: #5555FF;
+}
+
+.classname {
+    border: 1px solid black;
+}
+
+#idname {
+    border: 3px dotted purple;
+}
