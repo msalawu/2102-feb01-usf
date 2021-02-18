@@ -1,0 +1,51 @@
+Servlets continued
+	- config vs. context
+		- in the web.xml (deployment descriptor), you can specify servlet config
+		  and context
+		- config: parameters for a particular servlet
+			- <init-param>
+				<param-name>paramName</param-name>
+				<param-value>paramValue</param-value>
+			  </init-param>
+			- inside of the servlet tag for that servlet
+		- context: parameters for all of the servlets in the application
+			- <context-param>
+				<param-name></param-name>
+				<param-value></param-value>
+			  </context-param>
+			- at the same level as the servlet tags
+	- redirect vs. forward
+		- forwards happen in the web container; the URL still reflects the request
+		  made when it gets back to the client but the response came from a different
+		  one (the one that we forward the request to)
+			- req.getRequestDispatcher("/newURI").forward(req, resp);
+		- redirects send a response that triggers a new request to be made to the new
+		  URI that it is redirected to; the URL will be replaced with the new one
+			- resp.sendRedirect("newURI");
+	- Sessions
+		- a session represents an object that persists between requests from the
+		  same client (identified by an ID from the browser)
+		- there are three ways to associate a client with a session (i.e. maintain
+		  session identity), these are managed on the front end
+			1. cookies
+			2. URL rewriting (putting information in the URL)
+			3. hidden form fields
+			- you don't need to worry about these too much as you will not be
+			  managing them in your API
+		- HttpSession object, retrieved from the request
+		- req.getSession()
+		- session.setAttribute("name", value)
+		- session.getAttribute("name")
+		- session.invalidate()
+Design Patterns
+	- MVC: Model View Controller
+		- controller handles request flow
+		- model handles data access/CRUD
+		- view handles presentation rendering (for server-side rendering)
+		- model & view NEVER interact, only accessed by the controller.
+	- Front Controller
+		- front controller sends requests to handler/dispatcher
+		- handler/dispatcher decides which delegate to send request to
+		- front controller then sends the request to the appropriate delegate
+		- delegate ("logic class") handles CRUD, presentation, etc.
+		- can go hand-in-hand with MVC

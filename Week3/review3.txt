@@ -1,0 +1,47 @@
+Servlet Error/Exception Handling
+	- you can set up a particular error/exception handling servlet
+	  in the web.xml
+	- <error-page> is the outer tag
+		- you can either have <error-code> with a status code
+		  or <exception-type> with a Java class for any error
+		  or exception (Throwable)
+		- you then have a <location> to specify the url mapping
+		  to send the request to
+			- this can match the url-mapping tag of the
+			  servlet you are using for the error/exception
+			  handling, or it could direct to a static page
+	- you can have many of these for different error codes and
+	  exception types, directing to the same servlet or different
+	  servlets that handle it differently
+Query & Path Parameters
+	- when data is sent to the back end through an HTML form, it
+	  is sent as query parameters by default
+	- query parameters can also be defined directly in the request
+	  URI, like so:
+		- localhost:8080/user/login?user=sierra&pass=p4ss
+	- path parameters are simply parameters passed in as part of
+	  the actual path (they do not use the ?=& syntax)
+		- localhost:8080/user/5
+		- when defining endpoints, path parameters are usually
+		  written like so: /user/:id
+	- query parameters are best for filtering purposes, or when
+	  parameters need to be passed that may not be necessary or
+	  useful to pass through the request body
+		- for example, if you are logging in, you wouldn't
+		  probably be passing in an entire person object,
+		  so it's not really an ideal case to put in the
+		  request body (a username and password alone are
+		  not going to be easily mapped unless you make a
+		  special bean for that, and...why would you?)
+		- therefore, you can just pass in the pieces you
+		  need as query parameters. you don't have to
+		  worry about them being passed into the address
+		  bar if you are sending the request internally
+		  (always the case with single-page applications
+		  and/or pages that use AJAX, which is usually
+		  the case with a RESTful application)
+	- path parameters are best when you are specifying a
+	  particular resource from a collection using a unique
+	  identifier (not necessarily the primary key)
+		- usually this would be ID, but it could also
+		  be something like a name if that is unique

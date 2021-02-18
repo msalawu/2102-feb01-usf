@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>JavaScript Example</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="rev.css">
+        <!-- JavaScript can go in the head tag (here), the body tag, or both. -->
+        <script>
+            /*
+                Plain JavaScript can be written in your HTML file
+                inside of script tags, like this, or an external
+                JavaScript file can be referenced with the "src"
+                attribute of the script tag (found below).
+            */
+           console.log('Hello from the script tag in the head of the HTML document!');
+        </script>
+    </head>
+    <body>
+        <main>
+            <!-- JavaScript can also be used within certain attributes of HTML elements. -->
+            <button onclick="console.log('Hello world!')">Click Here</button>
+        </main>
+        <!--
+            Typically, best practice is to place your JavaScript at the end
+            of the body because it ensures that all elements of the DOM have
+            been read before the JavaScript can begin interacting with them.
+        -->
+        <script src="hello.js"></script>
+    </body>
+</html>
