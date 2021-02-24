@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- set up connection info -->
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgres?currentSchema=catapp</property>
+		<property name="hibernate.connection.username">postgres</property>
+		<property name="hibernate.connection.password">rev1910</property>
+		
+		<!-- hibernate setup -->
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="use_sql_comments">true</property>
+		
+		<!-- tell hibernate where to find our mappings -->
+		<mapping class="com.revature.beans.Breed"></mapping>
+		<mapping class="com.revature.beans.Cat"></mapping>
+		<mapping class="com.revature.beans.Person"></mapping>
+		<mapping class="com.revature.beans.Role"></mapping>
+		<mapping class="com.revature.beans.SpecialNeed"></mapping>
+		<mapping class="com.revature.beans.Status"></mapping>
+	</session-factory>
+</hibernate-configuration>

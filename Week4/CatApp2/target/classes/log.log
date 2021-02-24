@@ -1,0 +1,795 @@
+2021-02-24 17:15:03 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2021-02-24 17:15:03 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2021-02-24 17:15:03 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2021-02-24 17:15:04 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Cache71] -> [org.hibernate.dialect.Cache71Dialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [CUBRID] -> [org.hibernate.dialect.CUBRIDDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2] -> [org.hibernate.dialect.DB2Dialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2390] -> [org.hibernate.dialect.DB2390Dialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2390V8] -> [org.hibernate.dialect.DB2390V8Dialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2400] -> [org.hibernate.dialect.DB2400Dialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenFive] -> [org.hibernate.dialect.DerbyTenFiveDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenSix] -> [org.hibernate.dialect.DerbyTenSixDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenSeven] -> [org.hibernate.dialect.DerbyTenSevenDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Firebird] -> [org.hibernate.dialect.FirebirdDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [FrontBase] -> [org.hibernate.dialect.FrontBaseDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [H2] -> [org.hibernate.dialect.H2Dialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [HANAColumnStore] -> [org.hibernate.dialect.HANAColumnStoreDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [HANARowStore] -> [org.hibernate.dialect.HANARowStoreDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [HSQL] -> [org.hibernate.dialect.HSQLDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Informix] -> [org.hibernate.dialect.InformixDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres] -> [org.hibernate.dialect.IngresDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres9] -> [org.hibernate.dialect.Ingres9Dialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres10] -> [org.hibernate.dialect.Ingres10Dialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Interbase] -> [org.hibernate.dialect.InterbaseDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [JDataStore] -> [org.hibernate.dialect.JDataStoreDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Mckoi] -> [org.hibernate.dialect.MckoiDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MimerSQL] -> [org.hibernate.dialect.MimerSQLDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -> [org.hibernate.dialect.MySQL5Dialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -> [org.hibernate.dialect.MySQL5InnoDBDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL57InnoDB] -> [org.hibernate.dialect.MySQL57InnoDBDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL57] -> [org.hibernate.dialect.MySQL57Dialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle8i] -> [org.hibernate.dialect.Oracle8iDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle9i] -> [org.hibernate.dialect.Oracle9iDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle10g] -> [org.hibernate.dialect.Oracle10gDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Pointbase] -> [org.hibernate.dialect.PointbaseDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgresPlus] -> [org.hibernate.dialect.PostgresPlusDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL81] -> [org.hibernate.dialect.PostgreSQL81Dialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL82] -> [org.hibernate.dialect.PostgreSQL82Dialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL9] -> [org.hibernate.dialect.PostgreSQL9Dialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Progress] -> [org.hibernate.dialect.ProgressDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SAPDB] -> [org.hibernate.dialect.SAPDBDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer] -> [org.hibernate.dialect.SQLServerDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer2005] -> [org.hibernate.dialect.SQLServer2005Dialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer2008] -> [org.hibernate.dialect.SQLServer2008Dialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Sybase11] -> [org.hibernate.dialect.Sybase11Dialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseAnywhere] -> [org.hibernate.dialect.SybaseAnywhereDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseASE15] -> [org.hibernate.dialect.SybaseASE15Dialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseASE157] -> [org.hibernate.dialect.SybaseASE157Dialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Teradata] -> [org.hibernate.dialect.TeradataDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [TimesTen] -> [org.hibernate.dialect.TimesTenDialect]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Borland] -> [org.hibernate.engine.transaction.jta.platform.internal.BorlandEnterpriseServerJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.BorlandEnterpriseServerJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.BorlandEnterpriseServerJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Bitronix] -> [org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.BitronixJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JBossAS] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JBossTS] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JBossStandAloneJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JOnAS] -> [org.hibernate.engine.transaction.jta.platform.internal.JOnASJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JOnASJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JOnASJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JOTM] -> [org.hibernate.engine.transaction.jta.platform.internal.JOTMJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JOTMJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JOTMJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JRun4] -> [org.hibernate.engine.transaction.jta.platform.internal.JRun4JtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JRun4JtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JRun4JtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [OC4J] -> [org.hibernate.engine.transaction.jta.platform.internal.OC4JJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.OC4JJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.OC4JJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Orion] -> [org.hibernate.engine.transaction.jta.platform.internal.OrionJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.OrionJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.OrionJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Resin] -> [org.hibernate.engine.transaction.jta.platform.internal.ResinJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.ResinJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.ResinJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [SapNetWeaver] -> [org.hibernate.engine.transaction.jta.platform.internal.SapNetWeaverJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.SapNetWeaverJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.SapNetWeaverJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [SunOne] -> [org.hibernate.engine.transaction.jta.platform.internal.SunOneJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.SunOneJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.SunOneJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Weblogic] -> [org.hibernate.engine.transaction.jta.platform.internal.WeblogicJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WeblogicJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WeblogicJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphere] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WebSphereJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphereExtended] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereExtendedJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WebSphereExtendedJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereExtendedJtaPlatform]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [persistent] -> [org.hibernate.hql.spi.id.persistent.PersistentTableBulkIdStrategy]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [global_temporary] -> [org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [local_temporary] -> [org.hibernate.hql.spi.id.local.LocalTemporaryTableBulkIdStrategy]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.event.spi.EntityCopyObserver] : [disallow] -> [org.hibernate.event.internal.EntityCopyNotAllowedObserver]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.event.spi.EntityCopyObserver] : [allow] -> [org.hibernate.event.internal.EntityCopyAllowedObserver]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.event.spi.EntityCopyObserver] : [log] -> [org.hibernate.event.internal.EntityCopyAllowedLoggedObserver]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [default] -> [org.hibernate.cache.internal.DefaultCacheKeysFactory]
+2021-02-24 17:15:04 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [simple] -> [org.hibernate.cache.internal.SimpleCacheKeysFactory]
+2021-02-24 17:15:04 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2021-02-24 17:15:04 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2021-02-24 17:15:04 TRACE ClassLoaderServiceImpl:393 - trying via [new URL("hibernate.cfg.xml")]
+2021-02-24 17:15:04 TRACE ClassLoaderServiceImpl:400 - trying via [ClassLoader.getResourceAsStream("hibernate.cfg.xml")]
+2021-02-24 17:15:04 TRACE LocalXmlResourceResolver:35 - In resolveEntity(null, http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd, null, null)
+2021-02-24 17:15:04 DEBUG LocalXmlResourceResolver:57 - Interpreting public/system identifier : [null] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+2021-02-24 17:15:04 DEBUG LocalXmlResourceResolver:85 - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+2021-02-24 17:15:04 DEBUG JaxbCfgProcessor:116 - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+2021-02-24 17:15:05 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2021-02-24 17:15:05 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.config.spi.ConfigurationService]
+2021-02-24 17:15:05 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.cache.spi.RegionFactory]
+2021-02-24 17:15:05 DEBUG RegionFactoryInitiator:75 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2021-02-24 17:15:05 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-02-24 17:15:05 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.boot.cfgxml.spi.CfgXmlAccessService]
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration boolean -> org.hibernate.type.BooleanType@6aeb35e6
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration boolean -> org.hibernate.type.BooleanType@6aeb35e6
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@6aeb35e6
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@3349e9bb
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@35d019a3
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration yes_no -> org.hibernate.type.YesNoType@799f10e1
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration byte -> org.hibernate.type.ByteType@4135c3b
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration byte -> org.hibernate.type.ByteType@4135c3b
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@4135c3b
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration character -> org.hibernate.type.CharacterType@5c6648b0
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration char -> org.hibernate.type.CharacterType@5c6648b0
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@5c6648b0
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration short -> org.hibernate.type.ShortType@368f2016
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration short -> org.hibernate.type.ShortType@368f2016
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@368f2016
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration integer -> org.hibernate.type.IntegerType@a1153bc
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration int -> org.hibernate.type.IntegerType@a1153bc
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@a1153bc
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration long -> org.hibernate.type.LongType@5656be13
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration long -> org.hibernate.type.LongType@5656be13
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@5656be13
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration float -> org.hibernate.type.FloatType@34123d65
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration float -> org.hibernate.type.FloatType@34123d65
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@34123d65
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration double -> org.hibernate.type.DoubleType@3590fc5b
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration double -> org.hibernate.type.DoubleType@3590fc5b
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@3590fc5b
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@618b19ad
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@618b19ad
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@51399530
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@51399530
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration string -> org.hibernate.type.StringType@28701274
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.String -> org.hibernate.type.StringType@28701274
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@175c2241
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@7c7a06ec
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration url -> org.hibernate.type.UrlType@3c46e67a
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@3c46e67a
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration Duration -> org.hibernate.type.DurationType@36ebc363
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@36ebc363
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration Instant -> org.hibernate.type.InstantType@44c03695
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@44c03695
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@1f2586d6
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@1f2586d6
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@682b2fa
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@682b2fa
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@3eb25e1a
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@3eb25e1a
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@3eb738bb
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@3eb738bb
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@9d5509a
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@9d5509a
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@79079097
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@79079097
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration date -> org.hibernate.type.DateType@3d285d7e
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@3d285d7e
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration time -> org.hibernate.type.TimeType@ba2f4ec
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@ba2f4ec
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration timestamp -> org.hibernate.type.TimestampType@5dda768f
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@5dda768f
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@5dda768f
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@2aceadd4
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration calendar -> org.hibernate.type.CalendarType@279fedbd
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@279fedbd
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@279fedbd
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@2925bf5b
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration locale -> org.hibernate.type.LocaleType@6ad82709
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@6ad82709
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration currency -> org.hibernate.type.CurrencyType@b2c9a9c
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@b2c9a9c
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@247bddad
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@247bddad
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration class -> org.hibernate.type.ClassType@7d20d0b
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@7d20d0b
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@23348b5d
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@23348b5d
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@7c9d8e2
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration binary -> org.hibernate.type.BinaryType@6f4a47c7
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration byte[] -> org.hibernate.type.BinaryType@6f4a47c7
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration [B -> org.hibernate.type.BinaryType@6f4a47c7
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@43c1b556
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@43c1b556
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@43c1b556
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration row_version -> org.hibernate.type.RowVersionType@4988d8b8
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration image -> org.hibernate.type.ImageType@bccb269
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration characters -> org.hibernate.type.CharArrayType@158a8276
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration char[] -> org.hibernate.type.CharArrayType@158a8276
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration [C -> org.hibernate.type.CharArrayType@158a8276
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@4e50c791
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@4e50c791
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@4e50c791
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration text -> org.hibernate.type.TextType@4961f6af
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration ntext -> org.hibernate.type.NTextType@707194ba
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration blob -> org.hibernate.type.BlobType@c86b9e3
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@c86b9e3
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@37271612
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration clob -> org.hibernate.type.ClobType@1ebd319f
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@1ebd319f
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration nclob -> org.hibernate.type.NClobType@21b2e768
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@21b2e768
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@2118cddf
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@76ed1b7c
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration serializable -> org.hibernate.type.SerializableType@32910148
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration object -> org.hibernate.type.ObjectType@1018bde2
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1018bde2
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@568ff82
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@50caa560
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@2a266d09
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@5ab9e72c
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@186f8716
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@1d8bd0de
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@45ca843
+2021-02-24 17:15:05 DEBUG BasicTypeRegistry:145 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@11c9af63
+2021-02-24 17:15:05 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.spi.JdbcServices]
+2021-02-24 17:15:05 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2021-02-24 17:15:05 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectFactory]
+2021-02-24 17:15:05 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectResolver]
+2021-02-24 17:15:05 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+2021-02-24 17:15:05 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2021-02-24 17:15:05 INFO  pooling:126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/postgres?currentSchema=catapp]
+2021-02-24 17:15:05 INFO  pooling:132 - HHH10001001: Connection properties: {user=postgres, password=rev1910}
+2021-02-24 17:15:05 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2021-02-24 17:15:05 DEBUG DriverManagerConnectionProviderImpl:384 - Initializing Connection pool with 1 Connections
+2021-02-24 17:15:05 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2021-02-24 17:15:07 DEBUG JdbcEnvironmentInitiator:72 - Database ->
+       name : PostgreSQL
+    version : 13.0
+      major : 13
+      minor : 0
+2021-02-24 17:15:07 DEBUG JdbcEnvironmentInitiator:83 - Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.2.14
+      major : 42
+      minor : 2
+2021-02-24 17:15:07 DEBUG JdbcEnvironmentInitiator:389 - JDBC version : 4.2
+2021-02-24 17:15:07 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-02-24 17:15:07 DEBUG IdentifierHelperBuilder:112 - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2021-02-24 17:15:07 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [postgres]
+2021-02-24 17:15:07 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [catapp]
+2021-02-24 17:15:07 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2021-02-24 17:15:07 DEBUG BasicTypeRegistry:145 - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@1869fbd2
+2021-02-24 17:15:07 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@1869fbd2
+2021-02-24 17:15:07 INFO  BasicTypeRegistry:148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@23348b5d
+2021-02-24 17:15:08 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.id.factory.spi.MutableIdentifierGeneratorFactory]
+2021-02-24 17:15:08 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2021-02-24 17:15:08 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2021-02-24 17:15:08 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2021-02-24 17:15:08 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2021-02-24 17:15:08 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2021-02-24 17:15:08 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2021-02-24 17:15:08 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2021-02-24 17:15:08 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-02-24 17:15:08 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2021-02-24 17:15:08 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2021-02-24 17:15:08 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2021-02-24 17:15:08 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2021-02-24 17:15:08 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-02-24 17:15:08 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2021-02-24 17:15:08 DEBUG Namespace:47 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2021-02-24 17:15:08 DEBUG AnnotationMetadataSourceProcessorImpl:128 - Encountered a non-categorized annotated class [com.revature.beans.Breed]; ignoring
+2021-02-24 17:15:08 DEBUG AnnotationMetadataSourceProcessorImpl:128 - Encountered a non-categorized annotated class [com.revature.beans.Person]; ignoring
+2021-02-24 17:15:08 DEBUG AnnotationMetadataSourceProcessorImpl:128 - Encountered a non-categorized annotated class [com.revature.beans.Role]; ignoring
+2021-02-24 17:15:08 DEBUG AnnotationMetadataSourceProcessorImpl:128 - Encountered a non-categorized annotated class [com.revature.beans.SpecialNeed]; ignoring
+2021-02-24 17:15:08 DEBUG AnnotationMetadataSourceProcessorImpl:128 - Encountered a non-categorized annotated class [com.revature.beans.Status]; ignoring
+2021-02-24 17:15:08 DEBUG AnnotationBinder:511 - Binding entity from annotated class: com.revature.beans.Cat
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [DTYPE]
+2021-02-24 17:15:08 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-02-24 17:15:08 DEBUG EntityBinder:419 - Import with entity name Cat
+2021-02-24 17:15:08 TRACE InFlightMetadataCollectorImpl:673 - Import: Cat -> com.revature.beans.Cat
+2021-02-24 17:15:08 TRACE InFlightMetadataCollectorImpl:673 - Import: com.revature.beans.Cat -> com.revature.beans.Cat
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [Cat]
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [Cat]
+2021-02-24 17:15:08 DEBUG EntityBinder:695 - Bind entity com.revature.beans.Cat on table Cat
+2021-02-24 17:15:08 TRACE AnnotationBinder:1643 - Processing annotations of com.revature.beans.Cat.id
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:15:08 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Cat), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2021-02-24 17:15:08 DEBUG PropertyBinder:174 - MetadataSourceProcessor property id with lazy=false
+2021-02-24 17:15:08 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [com.revature.beans.Cat:id]
+2021-02-24 17:15:08 DEBUG SimpleValueBinder:411 - building SimpleValue for id
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:15:08 DEBUG PropertyBinder:265 - Building property id
+2021-02-24 17:15:08 TRACE PropertyBinder:323 - Cascading id with null
+2021-02-24 17:15:08 TRACE AnnotationBinder:2395 - Bind @Id on id
+2021-02-24 17:15:08 TRACE AnnotationBinder:1643 - Processing annotations of com.revature.beans.Cat.age
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [age]
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [age]
+2021-02-24 17:15:08 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Cat), mappingColumn=age, insertable=true, updatable=true, unique=false}
+2021-02-24 17:15:08 DEBUG PropertyBinder:174 - MetadataSourceProcessor property age with lazy=false
+2021-02-24 17:15:08 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [com.revature.beans.Cat:age]
+2021-02-24 17:15:08 DEBUG SimpleValueBinder:411 - building SimpleValue for age
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [age]
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [age]
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [age]
+2021-02-24 17:15:08 DEBUG PropertyBinder:265 - Building property age
+2021-02-24 17:15:08 TRACE PropertyBinder:323 - Cascading age with null
+2021-02-24 17:15:08 TRACE AnnotationBinder:1643 - Processing annotations of com.revature.beans.Cat.breed
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [breed_id]
+2021-02-24 17:15:08 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='breed_id', referencedColumn='', mappedBy=''}
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [breed]
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [breed]
+2021-02-24 17:15:08 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Cat), mappingColumn=breed, insertable=true, updatable=true, unique=false}
+2021-02-24 17:15:08 DEBUG PropertyBinder:265 - Building property breed
+2021-02-24 17:15:08 TRACE PropertyBinder:323 - Cascading breed with none
+2021-02-24 17:15:08 TRACE AnnotationBinder:1643 - Processing annotations of com.revature.beans.Cat.name
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:15:08 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Cat), mappingColumn=name, insertable=true, updatable=true, unique=false}
+2021-02-24 17:15:08 DEBUG PropertyBinder:174 - MetadataSourceProcessor property name with lazy=false
+2021-02-24 17:15:08 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [com.revature.beans.Cat:name]
+2021-02-24 17:15:08 DEBUG SimpleValueBinder:411 - building SimpleValue for name
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:15:08 DEBUG PropertyBinder:265 - Building property name
+2021-02-24 17:15:08 TRACE PropertyBinder:323 - Cascading name with null
+2021-02-24 17:15:08 TRACE AnnotationBinder:1643 - Processing annotations of com.revature.beans.Cat.specialNeeds
+2021-02-24 17:15:08 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Cat), mappingColumn=null, insertable=true, updatable=true, unique=false}
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [element]
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [element]
+2021-02-24 17:15:08 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Cat), mappingColumn=element, insertable=true, updatable=true, unique=false}
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [specialNeeds_KEY]
+2021-02-24 17:15:08 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Cat), mappingColumn=specialNeeds_KEY, insertable=true, updatable=true, unique=false}
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [specialNeeds_KEY]
+2021-02-24 17:15:08 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='specialNeeds_KEY', referencedColumn='null', mappedBy='null'}
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [cat_id]
+2021-02-24 17:15:08 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='cat_id', referencedColumn='', mappedBy=''}
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [special_need_id]
+2021-02-24 17:15:08 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='special_need_id', referencedColumn='', mappedBy=''}
+2021-02-24 17:15:08 DEBUG CollectionBinder:389 - Collection role: com.revature.beans.Cat.specialNeeds
+2021-02-24 17:15:08 DEBUG PropertyBinder:265 - Building property specialNeeds
+2021-02-24 17:15:08 TRACE PropertyBinder:323 - Cascading specialNeeds with none
+2021-02-24 17:15:08 TRACE AnnotationBinder:1643 - Processing annotations of com.revature.beans.Cat.status
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [status_id]
+2021-02-24 17:15:08 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='status_id', referencedColumn='', mappedBy=''}
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [status]
+2021-02-24 17:15:08 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [status]
+2021-02-24 17:15:08 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Cat), mappingColumn=status, insertable=true, updatable=true, unique=false}
+2021-02-24 17:15:08 DEBUG PropertyBinder:265 - Building property status
+2021-02-24 17:15:08 TRACE PropertyBinder:323 - Cascading status with none
+2021-02-24 17:15:08 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for id
+2021-02-24 17:15:08 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for age
+2021-02-24 17:15:08 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for name
+2021-02-24 17:17:16 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2021-02-24 17:17:17 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2021-02-24 17:17:17 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2021-02-24 17:17:17 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Cache71] -> [org.hibernate.dialect.Cache71Dialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [CUBRID] -> [org.hibernate.dialect.CUBRIDDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2] -> [org.hibernate.dialect.DB2Dialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2390] -> [org.hibernate.dialect.DB2390Dialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2390V8] -> [org.hibernate.dialect.DB2390V8Dialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2400] -> [org.hibernate.dialect.DB2400Dialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenFive] -> [org.hibernate.dialect.DerbyTenFiveDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenSix] -> [org.hibernate.dialect.DerbyTenSixDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenSeven] -> [org.hibernate.dialect.DerbyTenSevenDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Firebird] -> [org.hibernate.dialect.FirebirdDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [FrontBase] -> [org.hibernate.dialect.FrontBaseDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [H2] -> [org.hibernate.dialect.H2Dialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [HANAColumnStore] -> [org.hibernate.dialect.HANAColumnStoreDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [HANARowStore] -> [org.hibernate.dialect.HANARowStoreDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [HSQL] -> [org.hibernate.dialect.HSQLDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Informix] -> [org.hibernate.dialect.InformixDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres] -> [org.hibernate.dialect.IngresDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres9] -> [org.hibernate.dialect.Ingres9Dialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres10] -> [org.hibernate.dialect.Ingres10Dialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Interbase] -> [org.hibernate.dialect.InterbaseDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [JDataStore] -> [org.hibernate.dialect.JDataStoreDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Mckoi] -> [org.hibernate.dialect.MckoiDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MimerSQL] -> [org.hibernate.dialect.MimerSQLDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -> [org.hibernate.dialect.MySQL5Dialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -> [org.hibernate.dialect.MySQL5InnoDBDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL57InnoDB] -> [org.hibernate.dialect.MySQL57InnoDBDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL57] -> [org.hibernate.dialect.MySQL57Dialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle8i] -> [org.hibernate.dialect.Oracle8iDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle9i] -> [org.hibernate.dialect.Oracle9iDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle10g] -> [org.hibernate.dialect.Oracle10gDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Pointbase] -> [org.hibernate.dialect.PointbaseDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgresPlus] -> [org.hibernate.dialect.PostgresPlusDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL81] -> [org.hibernate.dialect.PostgreSQL81Dialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL82] -> [org.hibernate.dialect.PostgreSQL82Dialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL9] -> [org.hibernate.dialect.PostgreSQL9Dialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Progress] -> [org.hibernate.dialect.ProgressDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SAPDB] -> [org.hibernate.dialect.SAPDBDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer] -> [org.hibernate.dialect.SQLServerDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer2005] -> [org.hibernate.dialect.SQLServer2005Dialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer2008] -> [org.hibernate.dialect.SQLServer2008Dialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Sybase11] -> [org.hibernate.dialect.Sybase11Dialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseAnywhere] -> [org.hibernate.dialect.SybaseAnywhereDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseASE15] -> [org.hibernate.dialect.SybaseASE15Dialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseASE157] -> [org.hibernate.dialect.SybaseASE157Dialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Teradata] -> [org.hibernate.dialect.TeradataDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [TimesTen] -> [org.hibernate.dialect.TimesTenDialect]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Borland] -> [org.hibernate.engine.transaction.jta.platform.internal.BorlandEnterpriseServerJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.BorlandEnterpriseServerJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.BorlandEnterpriseServerJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Bitronix] -> [org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.BitronixJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JBossAS] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JBossTS] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JBossStandAloneJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JOnAS] -> [org.hibernate.engine.transaction.jta.platform.internal.JOnASJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JOnASJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JOnASJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JOTM] -> [org.hibernate.engine.transaction.jta.platform.internal.JOTMJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JOTMJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JOTMJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JRun4] -> [org.hibernate.engine.transaction.jta.platform.internal.JRun4JtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JRun4JtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JRun4JtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [OC4J] -> [org.hibernate.engine.transaction.jta.platform.internal.OC4JJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.OC4JJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.OC4JJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Orion] -> [org.hibernate.engine.transaction.jta.platform.internal.OrionJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.OrionJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.OrionJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Resin] -> [org.hibernate.engine.transaction.jta.platform.internal.ResinJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.ResinJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.ResinJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [SapNetWeaver] -> [org.hibernate.engine.transaction.jta.platform.internal.SapNetWeaverJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.SapNetWeaverJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.SapNetWeaverJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [SunOne] -> [org.hibernate.engine.transaction.jta.platform.internal.SunOneJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.SunOneJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.SunOneJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Weblogic] -> [org.hibernate.engine.transaction.jta.platform.internal.WeblogicJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WeblogicJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WeblogicJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphere] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WebSphereJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphereExtended] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereExtendedJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WebSphereExtendedJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereExtendedJtaPlatform]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [persistent] -> [org.hibernate.hql.spi.id.persistent.PersistentTableBulkIdStrategy]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [global_temporary] -> [org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [local_temporary] -> [org.hibernate.hql.spi.id.local.LocalTemporaryTableBulkIdStrategy]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.event.spi.EntityCopyObserver] : [disallow] -> [org.hibernate.event.internal.EntityCopyNotAllowedObserver]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.event.spi.EntityCopyObserver] : [allow] -> [org.hibernate.event.internal.EntityCopyAllowedObserver]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.event.spi.EntityCopyObserver] : [log] -> [org.hibernate.event.internal.EntityCopyAllowedLoggedObserver]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [default] -> [org.hibernate.cache.internal.DefaultCacheKeysFactory]
+2021-02-24 17:17:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [simple] -> [org.hibernate.cache.internal.SimpleCacheKeysFactory]
+2021-02-24 17:17:17 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2021-02-24 17:17:17 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2021-02-24 17:17:17 TRACE ClassLoaderServiceImpl:393 - trying via [new URL("hibernate.cfg.xml")]
+2021-02-24 17:17:17 TRACE ClassLoaderServiceImpl:400 - trying via [ClassLoader.getResourceAsStream("hibernate.cfg.xml")]
+2021-02-24 17:17:17 TRACE LocalXmlResourceResolver:35 - In resolveEntity(null, http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd, null, null)
+2021-02-24 17:17:17 DEBUG LocalXmlResourceResolver:57 - Interpreting public/system identifier : [null] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+2021-02-24 17:17:17 DEBUG LocalXmlResourceResolver:85 - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+2021-02-24 17:17:17 DEBUG JaxbCfgProcessor:116 - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+2021-02-24 17:17:17 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2021-02-24 17:17:17 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.config.spi.ConfigurationService]
+2021-02-24 17:17:18 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.cache.spi.RegionFactory]
+2021-02-24 17:17:18 DEBUG RegionFactoryInitiator:75 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2021-02-24 17:17:18 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-02-24 17:17:18 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.boot.cfgxml.spi.CfgXmlAccessService]
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration boolean -> org.hibernate.type.BooleanType@6aeb35e6
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration boolean -> org.hibernate.type.BooleanType@6aeb35e6
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@6aeb35e6
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@3349e9bb
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@35d019a3
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration yes_no -> org.hibernate.type.YesNoType@799f10e1
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration byte -> org.hibernate.type.ByteType@4135c3b
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration byte -> org.hibernate.type.ByteType@4135c3b
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@4135c3b
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration character -> org.hibernate.type.CharacterType@5c6648b0
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration char -> org.hibernate.type.CharacterType@5c6648b0
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@5c6648b0
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration short -> org.hibernate.type.ShortType@368f2016
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration short -> org.hibernate.type.ShortType@368f2016
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@368f2016
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration integer -> org.hibernate.type.IntegerType@a1153bc
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration int -> org.hibernate.type.IntegerType@a1153bc
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@a1153bc
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration long -> org.hibernate.type.LongType@5656be13
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration long -> org.hibernate.type.LongType@5656be13
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@5656be13
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration float -> org.hibernate.type.FloatType@34123d65
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration float -> org.hibernate.type.FloatType@34123d65
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@34123d65
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration double -> org.hibernate.type.DoubleType@3590fc5b
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration double -> org.hibernate.type.DoubleType@3590fc5b
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@3590fc5b
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@618b19ad
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@618b19ad
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@51399530
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@51399530
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration string -> org.hibernate.type.StringType@28701274
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.String -> org.hibernate.type.StringType@28701274
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@175c2241
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@7c7a06ec
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration url -> org.hibernate.type.UrlType@3c46e67a
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@3c46e67a
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration Duration -> org.hibernate.type.DurationType@36ebc363
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@36ebc363
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration Instant -> org.hibernate.type.InstantType@44c03695
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@44c03695
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@1f2586d6
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@1f2586d6
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@682b2fa
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@682b2fa
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@3eb25e1a
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@3eb25e1a
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@3eb738bb
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@3eb738bb
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@9d5509a
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@9d5509a
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@79079097
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@79079097
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration date -> org.hibernate.type.DateType@3d285d7e
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@3d285d7e
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration time -> org.hibernate.type.TimeType@ba2f4ec
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@ba2f4ec
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration timestamp -> org.hibernate.type.TimestampType@5dda768f
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@5dda768f
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@5dda768f
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@2aceadd4
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration calendar -> org.hibernate.type.CalendarType@279fedbd
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@279fedbd
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@279fedbd
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@2925bf5b
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration locale -> org.hibernate.type.LocaleType@6ad82709
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@6ad82709
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration currency -> org.hibernate.type.CurrencyType@b2c9a9c
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@b2c9a9c
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@247bddad
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@247bddad
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration class -> org.hibernate.type.ClassType@7d20d0b
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@7d20d0b
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@23348b5d
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@23348b5d
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@7c9d8e2
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration binary -> org.hibernate.type.BinaryType@6f4a47c7
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration byte[] -> org.hibernate.type.BinaryType@6f4a47c7
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration [B -> org.hibernate.type.BinaryType@6f4a47c7
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@43c1b556
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@43c1b556
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@43c1b556
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration row_version -> org.hibernate.type.RowVersionType@4988d8b8
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration image -> org.hibernate.type.ImageType@bccb269
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration characters -> org.hibernate.type.CharArrayType@158a8276
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration char[] -> org.hibernate.type.CharArrayType@158a8276
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration [C -> org.hibernate.type.CharArrayType@158a8276
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@4e50c791
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@4e50c791
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@4e50c791
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration text -> org.hibernate.type.TextType@4961f6af
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration ntext -> org.hibernate.type.NTextType@707194ba
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration blob -> org.hibernate.type.BlobType@c86b9e3
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@c86b9e3
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@37271612
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration clob -> org.hibernate.type.ClobType@1ebd319f
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@1ebd319f
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration nclob -> org.hibernate.type.NClobType@21b2e768
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@21b2e768
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@2118cddf
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@76ed1b7c
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration serializable -> org.hibernate.type.SerializableType@32910148
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration object -> org.hibernate.type.ObjectType@1018bde2
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1018bde2
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@568ff82
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@50caa560
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@2a266d09
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@5ab9e72c
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@186f8716
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@1d8bd0de
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@45ca843
+2021-02-24 17:17:18 DEBUG BasicTypeRegistry:145 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@11c9af63
+2021-02-24 17:17:18 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.spi.JdbcServices]
+2021-02-24 17:17:18 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2021-02-24 17:17:18 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectFactory]
+2021-02-24 17:17:18 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectResolver]
+2021-02-24 17:17:18 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+2021-02-24 17:17:18 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2021-02-24 17:17:18 INFO  pooling:126 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/postgres?currentSchema=catapp]
+2021-02-24 17:17:18 INFO  pooling:132 - HHH10001001: Connection properties: {user=postgres, password=rev1910}
+2021-02-24 17:17:18 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2021-02-24 17:17:18 DEBUG DriverManagerConnectionProviderImpl:384 - Initializing Connection pool with 1 Connections
+2021-02-24 17:17:18 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2021-02-24 17:17:19 DEBUG JdbcEnvironmentInitiator:72 - Database ->
+       name : PostgreSQL
+    version : 13.0
+      major : 13
+      minor : 0
+2021-02-24 17:17:19 DEBUG JdbcEnvironmentInitiator:83 - Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.2.14
+      major : 42
+      minor : 2
+2021-02-24 17:17:19 DEBUG JdbcEnvironmentInitiator:389 - JDBC version : 4.2
+2021-02-24 17:17:19 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-02-24 17:17:20 DEBUG IdentifierHelperBuilder:112 - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [postgres]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [catapp]
+2021-02-24 17:17:20 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2021-02-24 17:17:20 DEBUG BasicTypeRegistry:145 - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@1869fbd2
+2021-02-24 17:17:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@1869fbd2
+2021-02-24 17:17:20 INFO  BasicTypeRegistry:148 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@23348b5d
+2021-02-24 17:17:20 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.id.factory.spi.MutableIdentifierGeneratorFactory]
+2021-02-24 17:17:20 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2021-02-24 17:17:20 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2021-02-24 17:17:20 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2021-02-24 17:17:20 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2021-02-24 17:17:20 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2021-02-24 17:17:20 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2021-02-24 17:17:20 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2021-02-24 17:17:20 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-02-24 17:17:20 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2021-02-24 17:17:20 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2021-02-24 17:17:20 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2021-02-24 17:17:20 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2021-02-24 17:17:20 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-02-24 17:17:20 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2021-02-24 17:17:20 DEBUG Namespace:47 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2021-02-24 17:17:20 DEBUG AnnotationMetadataSourceProcessorImpl:128 - Encountered a non-categorized annotated class [com.revature.beans.Person]; ignoring
+2021-02-24 17:17:20 DEBUG AnnotationMetadataSourceProcessorImpl:128 - Encountered a non-categorized annotated class [com.revature.beans.Role]; ignoring
+2021-02-24 17:17:20 DEBUG AnnotationMetadataSourceProcessorImpl:128 - Encountered a non-categorized annotated class [com.revature.beans.SpecialNeed]; ignoring
+2021-02-24 17:17:20 DEBUG AnnotationBinder:511 - Binding entity from annotated class: com.revature.beans.Breed
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [DTYPE]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-02-24 17:17:20 DEBUG EntityBinder:419 - Import with entity name Breed
+2021-02-24 17:17:20 TRACE InFlightMetadataCollectorImpl:673 - Import: Breed -> com.revature.beans.Breed
+2021-02-24 17:17:20 TRACE InFlightMetadataCollectorImpl:673 - Import: com.revature.beans.Breed -> com.revature.beans.Breed
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [Breed]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [Breed]
+2021-02-24 17:17:20 DEBUG EntityBinder:695 - Bind entity com.revature.beans.Breed on table Breed
+2021-02-24 17:17:20 TRACE AnnotationBinder:1643 - Processing annotations of com.revature.beans.Breed.id
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Breed), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2021-02-24 17:17:20 DEBUG PropertyBinder:174 - MetadataSourceProcessor property id with lazy=false
+2021-02-24 17:17:20 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [com.revature.beans.Breed:id]
+2021-02-24 17:17:20 DEBUG SimpleValueBinder:411 - building SimpleValue for id
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:17:20 DEBUG PropertyBinder:265 - Building property id
+2021-02-24 17:17:20 TRACE PropertyBinder:323 - Cascading id with null
+2021-02-24 17:17:20 TRACE AnnotationBinder:2395 - Bind @Id on id
+2021-02-24 17:17:20 TRACE AnnotationBinder:1643 - Processing annotations of com.revature.beans.Breed.name
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Breed), mappingColumn=name, insertable=true, updatable=true, unique=false}
+2021-02-24 17:17:20 DEBUG PropertyBinder:174 - MetadataSourceProcessor property name with lazy=false
+2021-02-24 17:17:20 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [com.revature.beans.Breed:name]
+2021-02-24 17:17:20 DEBUG SimpleValueBinder:411 - building SimpleValue for name
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:17:20 DEBUG PropertyBinder:265 - Building property name
+2021-02-24 17:17:20 TRACE PropertyBinder:323 - Cascading name with null
+2021-02-24 17:17:20 DEBUG AnnotationBinder:511 - Binding entity from annotated class: com.revature.beans.Cat
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [DTYPE]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-02-24 17:17:20 DEBUG EntityBinder:419 - Import with entity name Cat
+2021-02-24 17:17:20 TRACE InFlightMetadataCollectorImpl:673 - Import: Cat -> com.revature.beans.Cat
+2021-02-24 17:17:20 TRACE InFlightMetadataCollectorImpl:673 - Import: com.revature.beans.Cat -> com.revature.beans.Cat
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [Cat]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [Cat]
+2021-02-24 17:17:20 DEBUG EntityBinder:695 - Bind entity com.revature.beans.Cat on table Cat
+2021-02-24 17:17:20 TRACE AnnotationBinder:1643 - Processing annotations of com.revature.beans.Cat.id
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Cat), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2021-02-24 17:17:20 DEBUG PropertyBinder:174 - MetadataSourceProcessor property id with lazy=false
+2021-02-24 17:17:20 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [com.revature.beans.Cat:id]
+2021-02-24 17:17:20 DEBUG SimpleValueBinder:411 - building SimpleValue for id
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:17:20 DEBUG PropertyBinder:265 - Building property id
+2021-02-24 17:17:20 TRACE PropertyBinder:323 - Cascading id with null
+2021-02-24 17:17:20 TRACE AnnotationBinder:2395 - Bind @Id on id
+2021-02-24 17:17:20 TRACE AnnotationBinder:1643 - Processing annotations of com.revature.beans.Cat.age
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [age]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [age]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Cat), mappingColumn=age, insertable=true, updatable=true, unique=false}
+2021-02-24 17:17:20 DEBUG PropertyBinder:174 - MetadataSourceProcessor property age with lazy=false
+2021-02-24 17:17:20 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [com.revature.beans.Cat:age]
+2021-02-24 17:17:20 DEBUG SimpleValueBinder:411 - building SimpleValue for age
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [age]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [age]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [age]
+2021-02-24 17:17:20 DEBUG PropertyBinder:265 - Building property age
+2021-02-24 17:17:20 TRACE PropertyBinder:323 - Cascading age with null
+2021-02-24 17:17:20 TRACE AnnotationBinder:1643 - Processing annotations of com.revature.beans.Cat.breed
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [breed_id]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='breed_id', referencedColumn='', mappedBy=''}
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [breed]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [breed]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Cat), mappingColumn=breed, insertable=true, updatable=true, unique=false}
+2021-02-24 17:17:20 DEBUG PropertyBinder:265 - Building property breed
+2021-02-24 17:17:20 TRACE PropertyBinder:323 - Cascading breed with none
+2021-02-24 17:17:20 TRACE AnnotationBinder:1643 - Processing annotations of com.revature.beans.Cat.name
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Cat), mappingColumn=name, insertable=true, updatable=true, unique=false}
+2021-02-24 17:17:20 DEBUG PropertyBinder:174 - MetadataSourceProcessor property name with lazy=false
+2021-02-24 17:17:20 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [com.revature.beans.Cat:name]
+2021-02-24 17:17:20 DEBUG SimpleValueBinder:411 - building SimpleValue for name
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:17:20 DEBUG PropertyBinder:265 - Building property name
+2021-02-24 17:17:20 TRACE PropertyBinder:323 - Cascading name with null
+2021-02-24 17:17:20 TRACE AnnotationBinder:1643 - Processing annotations of com.revature.beans.Cat.specialNeeds
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Cat), mappingColumn=null, insertable=true, updatable=true, unique=false}
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [element]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [element]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Cat), mappingColumn=element, insertable=true, updatable=true, unique=false}
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [specialNeeds_KEY]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Cat), mappingColumn=specialNeeds_KEY, insertable=true, updatable=true, unique=false}
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [specialNeeds_KEY]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='specialNeeds_KEY', referencedColumn='null', mappedBy='null'}
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [cat_id]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='cat_id', referencedColumn='', mappedBy=''}
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [special_need_id]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='special_need_id', referencedColumn='', mappedBy=''}
+2021-02-24 17:17:20 DEBUG CollectionBinder:389 - Collection role: com.revature.beans.Cat.specialNeeds
+2021-02-24 17:17:20 DEBUG PropertyBinder:265 - Building property specialNeeds
+2021-02-24 17:17:20 TRACE PropertyBinder:323 - Cascading specialNeeds with none
+2021-02-24 17:17:20 TRACE AnnotationBinder:1643 - Processing annotations of com.revature.beans.Cat.status
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [status_id]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='status_id', referencedColumn='', mappedBy=''}
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [status]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [status]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Cat), mappingColumn=status, insertable=true, updatable=true, unique=false}
+2021-02-24 17:17:20 DEBUG PropertyBinder:265 - Building property status
+2021-02-24 17:17:20 TRACE PropertyBinder:323 - Cascading status with none
+2021-02-24 17:17:20 DEBUG AnnotationBinder:511 - Binding entity from annotated class: com.revature.beans.Status
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [DTYPE]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-02-24 17:17:20 DEBUG EntityBinder:419 - Import with entity name Status
+2021-02-24 17:17:20 TRACE InFlightMetadataCollectorImpl:673 - Import: Status -> com.revature.beans.Status
+2021-02-24 17:17:20 TRACE InFlightMetadataCollectorImpl:673 - Import: com.revature.beans.Status -> com.revature.beans.Status
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [Status]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [Status]
+2021-02-24 17:17:20 DEBUG EntityBinder:695 - Bind entity com.revature.beans.Status on table Status
+2021-02-24 17:17:20 TRACE AnnotationBinder:1643 - Processing annotations of com.revature.beans.Status.id
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Status), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2021-02-24 17:17:20 DEBUG PropertyBinder:174 - MetadataSourceProcessor property id with lazy=false
+2021-02-24 17:17:20 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [com.revature.beans.Status:id]
+2021-02-24 17:17:20 DEBUG SimpleValueBinder:411 - building SimpleValue for id
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2021-02-24 17:17:20 DEBUG PropertyBinder:265 - Building property id
+2021-02-24 17:17:20 TRACE PropertyBinder:323 - Cascading id with null
+2021-02-24 17:17:20 TRACE AnnotationBinder:2395 - Bind @Id on id
+2021-02-24 17:17:20 TRACE AnnotationBinder:1643 - Processing annotations of com.revature.beans.Status.name
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:17:20 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Status), mappingColumn=name, insertable=true, updatable=true, unique=false}
+2021-02-24 17:17:20 DEBUG PropertyBinder:174 - MetadataSourceProcessor property name with lazy=false
+2021-02-24 17:17:20 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [com.revature.beans.Status:name]
+2021-02-24 17:17:20 DEBUG SimpleValueBinder:411 - building SimpleValue for name
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [name]
+2021-02-24 17:17:20 DEBUG PropertyBinder:265 - Building property name
+2021-02-24 17:17:20 TRACE PropertyBinder:323 - Cascading name with null
+2021-02-24 17:17:20 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for id
+2021-02-24 17:17:20 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for name
+2021-02-24 17:17:20 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for id
+2021-02-24 17:17:20 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for age
+2021-02-24 17:17:20 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for name
+2021-02-24 17:17:20 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for id
+2021-02-24 17:17:20 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for name
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [breed_id]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [null]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [breed_id]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [breed_id]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [status_id]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [null]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [status_id]
+2021-02-24 17:17:20 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [status_id]
+2021-02-24 17:17:20 DEBUG PrimaryKey:35 - Forcing column [id] to be non-null as it is part of the primary key for table [breed]
+2021-02-24 17:17:20 DEBUG PrimaryKey:35 - Forcing column [id] to be non-null as it is part of the primary key for table [cat]
+2021-02-24 17:17:20 DEBUG PrimaryKey:35 - Forcing column [id] to be non-null as it is part of the primary key for table [status]
+2021-02-24 17:17:20 DEBUG CollectionSecondPass:51 - Second pass for collection: com.revature.beans.Cat.specialNeeds
+2021-02-24 17:17:20 DEBUG CollectionBinder:1246 - Binding a collection of element: com.revature.beans.Cat.specialNeeds
