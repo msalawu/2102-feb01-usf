@@ -26,7 +26,7 @@ this docker exercise is meant to give you some exposure to setting up docker on 
     - postgres-container or otherwise if you set your container name to something different
     - postgres or otherwise if you set your username to something different
     - this command puts you into psql to run sql commands
-13. run sql commands as desired
+13. run sql commands as desired...
     - for example:
         - create schema catapp;
         - create table catapp.breed (id serial primary key, name varchar(30) unique not null);
@@ -38,3 +38,9 @@ this docker exercise is meant to give you some exposure to setting up docker on 
         - \dt schema_name. -lists tables inside of the specified schema (don't forget period at the end)
         - set search_path to schema_name; -allows you to run your commands in the specified schema (rather than specifying in every table name)
         - \q -quits psql
+14. and/or connect through dbeaver with the following steps
+15. add a rule to your ec2's security group for custom TCP at port 5432 for your IP
+16. then on your machine, connect through dbeaver by using the ec2 endpoint as the hostname and enter the username and password you created in the docker container (step 10)
+17. if you used psql to run any commands, you can see that they executed by looking through dbeaver
+18. in your ec2, stop the postgres container when you're ready
+    - docker stop postgres-container
