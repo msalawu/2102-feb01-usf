@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table
+@Table(name="special_need")
 public class SpecialNeed {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)

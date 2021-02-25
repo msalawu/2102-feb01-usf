@@ -14,7 +14,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table
 public class Cat {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
