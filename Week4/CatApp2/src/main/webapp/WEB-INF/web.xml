@@ -4,6 +4,7 @@
   <servlet>
   	<servlet-name>Front</servlet-name>
   	<servlet-class>com.revature.controller.FrontController</servlet-class>
+  	<load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
   	<servlet-name>Front</servlet-name>

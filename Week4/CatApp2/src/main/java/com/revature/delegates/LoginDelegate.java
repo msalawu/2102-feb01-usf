@@ -45,6 +45,10 @@ public class LoginDelegate implements FrontControllerDelegate {
 					resp.getWriter().write(om.writeValueAsString(p));
 					resp.setStatus(HttpServletResponse.SC_CREATED);
 				}
+			} else if ("GET".equals(req.getMethod())) {
+				Person p = (Person) req.getSession().getAttribute("person");
+				resp.getWriter().write(om.writeValueAsString(p));
+				resp.setStatus(200);
 			} else {
 				resp.sendError(HttpServletResponse.SC_METHOD_NOT_ALLOWED);
 			}
