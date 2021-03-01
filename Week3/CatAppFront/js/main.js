@@ -1,4 +1,4 @@
-let baseUrl = 'http://localhost:8080';
+let baseUrl = 'http://localhost:8080/CatApp2';
 let nav = document.getElementById('navBar');
 let loggedUser = null;
 checkLogin();
