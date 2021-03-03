@@ -1,0 +1,29 @@
+.pkmn {
+    background-color: #D92090;
+    background-color: #D29;
+    width: 60%;
+    padding: 10px 40px;
+    margin:10px auto;
+    border-radius: 3px 30px;
+    color:white;
+}
+
+.lists {
+    display:flex;
+    justify-content: space-evenly;
+    margin:auto;
+    width:80%;
+}
+
+ul {
+    width:100%;
+}
+
+section {
+   padding: 2px 20px;
+   margin: 0px 20px;
+}
+
+.sprites {
+    display: block;
+}

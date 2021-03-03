@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Pokemon } from '../models/pokemon';
+import { PokemonService } from '../pokemon.service';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,7 @@ export class HomeComponent implements OnInit {
   pokemonId: number;
   homePokemon: Pokemon;
 
-  constructor() {
+  constructor(private pokemonServ: PokemonService) {
     // this.random = Math.floor(Math.random()*3);
     this.pokemonId = 1;
     this.homePokemon = new Pokemon();
@@ -38,9 +39,14 @@ export class HomeComponent implements OnInit {
     let b = 'something';
   }
 
-  async getPokemon() {
-    let response = await fetch('https://pokeapi.co/api/v2/pokemon/' + this.pokemonId);
-    if (response.status === 200) this.homePokemon = await response.json();
+  getPokemon() {
+    // let response = await fetch('https://pokeapi.co/api/v2/pokemon/' + this.pokemonId);
+    // if (response.status === 200) this.homePokemon = await response.json();
+    this.pokemonServ.getPokemonById(this.pokemonId).subscribe(
+      resp => {
+        this.homePokemon = resp;
+      }
+    );
   }
 
 }
