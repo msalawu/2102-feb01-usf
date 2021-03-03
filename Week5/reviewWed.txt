@@ -1,0 +1,107 @@
+Angular
+	front-end framework
+	used to make dynamic, single-page applications
+	allows you to have readable, modular code
+	made by Google
+	originally it was written in JS (AngularJS), then after version 1.7 it became Angular and was written in TS
+	modules, components, services, classes
+	commands:
+		npm install -g @angular/cli
+			- installs the angular command line interface
+		ng new app-name
+			- creates a new angular project
+		ng generate
+			- shortened to ng g
+			- ng g component componentName, or ng g c componentName
+			- ng g service serviceName, or ng g s serviceName
+			- ng g class className
+			- ng g module moduleModule
+		ng serve
+			- serves the project locally, by default on port 4200
+		ng test
+			- runs protractor & jasmine tests (spec.ts)
+		ng build
+			- builds the final application files that can be deployed
+	the setup of the project
+		angular.json: angular settings
+		tsconfig.json: settings for typescript, like transpiling target
+		package.json: npm dependencies
+		src/app is where our files will be
+	module
+		like a mini-application for specific tasks
+		root module is AppModule
+	component
+		what you're actually using to build the page
+		comprised of 4 parts
+			- component.html: the html for the component
+			- component.css: the css for the component
+			- component.ts: the typescript for the component
+			- component.spec.ts: the unit tests for the component
+		the page that you see in an angular application is built by many components
+		the html from components is sometimes referred to as templates
+	service
+		an object used by another object as a dependency
+		it's usually a layer between the visual presentation of the app (components) and the logic/data
+		angular documentation says that any reusable code could be a service
+	class
+		models for your data/objects, usually the objects that you're getting from the back end
+		not necessary, but it's a good way to ensure that your JSON is being mapped correctly
+	directives
+		custom HTML tags/attributes
+		3 types
+			component: the HTML tag used to reference a component.
+				<app-componentName></app-componentName>
+			structural: the directive that affects the DOM; whether elements show up or not using conditionals/loops.
+				*ngIf, *ngFor, etc.
+			attribute: the directive that affects the "look" of elements
+				<div ngStyle="color:blue;"></div>
+				<div appCustomDirective></div>
+	services
+		services are specified with the @Injectable decorator
+		they are any code that could be reusable and injected as a dependency into other classes (components)
+		dependency injection
+			Angular uses constructor injection
+			constructor (private pokemonService: PokemonService)
+			because we gave the object an access modifier, Angular knows we need this to be an object-level field
+				then when Angular constructs the component, it can inject the service
+			services that are to be injected also must be in the app.module.ts in the providers array
+	http
+		HttpClient object that allows us to send requests
+		must add HttpClientModule to the imports array in the app.module.ts
+		this.http.get('url').pipe( map(resp => resp as Pokemon) );
+			http is our HttpClient object
+			.get sends a GET request (.post would send POST request, etc.)
+			.pipe allows us to return an Observable
+			map allows us to take the JSON data and make it into an object
+		regular JS allows asynchronous calls with Promises
+		in Angular we can use Observables from rxjs
+			- an observable is basically allowing an asynchronous call and giving us a stream of events
+				(sort of like how our plain AJAX calls had the readystatechange events)
+			- to use an Observable (to start the stream), we have to subscribe to it
+			- we get the Observable from a service, then subscribe:
+				this.pokemonService.getPokemonById(this.id).subscribe(
+					resp => {
+						this.pokemon = resp;
+					}
+				);
+	data binding
+		a way of making communication easier between the HTML/DOM and the TypeScript
+			- typically we would be using lots of document.getElementById()
+			- allows you to put these connections directly into the HTML (less JS!)
+		4 main types of data binding
+			- property binding []
+				- in the .ts file: let colorVar = blue;
+				- in the .html file: <div [style]="'color:'+colorVar"></div>
+				- goes from TS -> HTML
+			- interpolation {{ }}
+				- in the .ts file: let username = "sierra";
+				- in the .html file: <p>{{ username }}</p>
+				- goes from TS -> HTML
+			- event binding ()
+				- in the .ts file: function doClick() { window.alert('thing!'); }
+				- in the .html file: <button type="button" (click)="doClick()">Submit</button>
+				- goes from HTML -> TS
+			- two-way binding [( )]
+				- in the .ts file: let usernameInput = "Enter Username";
+				- in the .html file: <input name="user" [(ngModel)]="usernameInput">
+				- goes both ways HTML <-> TS
