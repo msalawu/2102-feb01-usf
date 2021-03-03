@@ -1,0 +1,6 @@
+<form>
+    <input type="number" [(ngModel)]="pokemonId" name="pokemonId"> <!-- two-way binding -->
+    <button class="pkmn" type="button" (click)="getPokemon()">{{ msg }}</button> <!-- event binding and interpolation -->
+</form>
+<br>
+<app-pokemon [pokemon]="homePokemon"></app-pokemon> <!-- property binding -->
