@@ -9,10 +9,12 @@ import { Pokemon } from '../models/pokemon';
 export class PokemonComponent implements OnInit {
   // the input decorator allows this field to be used as an attribute on the
   @Input() pokemon: Pokemon;
+  filterText: string;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.filterText = '';
   }
 
 }

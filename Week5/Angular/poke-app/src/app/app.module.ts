@@ -7,12 +7,16 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
 import { PokemonService } from './pokemon.service';
+import { TypeColorDirective } from './type-color.directive';
+import { MoveFilterPipe } from './move-filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PokemonComponent
+    PokemonComponent,
+    TypeColorDirective,
+    MoveFilterPipe
   ],
   imports: [
     BrowserModule,

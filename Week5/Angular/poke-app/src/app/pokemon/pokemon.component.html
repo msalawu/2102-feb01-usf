@@ -11,7 +11,7 @@
             <!-- Types: ul -->
             <h4>Types</h4>
             <ul>
-                <li *ngFor="let type of pokemon.types">{{ type.type.name }}</li>
+                <li appTypeColor *ngFor="let type of pokemon.types">{{ type.type.name }} </li>
             </ul>
         </div>
         <!-- Sprites: images -->
@@ -24,8 +24,11 @@
         <!-- Moves: ul -->
         <div class="moves">
             <h4>Moves</h4>
+            <label for="search">Search: </label>
+            <input name="search" type="text" [(ngModel)]="filterText">
+            <br>
             <ul>
-                <li *ngFor="let move of pokemon.moves">{{ move.move.name }}</li>
+                <li *ngFor="let move of pokemon.moves | moveFilter:filterText">{{ move.move.name }}</li>
             </ul>
         </div>
     </div>
