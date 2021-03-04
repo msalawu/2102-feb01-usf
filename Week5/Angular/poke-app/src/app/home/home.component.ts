@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Pokemon } from '../models/pokemon';
 import { PokemonService } from '../pokemon.service';
 
@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   msg: string = 'Get Pokemon';
   pokemonId: number;
   homePokemon: Pokemon;
+  @Output() onGetPokemon: EventEmitter<any> = new EventEmitter();
 
   constructor(private pokemonServ: PokemonService) {
     // this.random = Math.floor(Math.random()*3);
@@ -45,6 +46,7 @@ export class HomeComponent implements OnInit {
     this.pokemonServ.getPokemonById(this.pokemonId).subscribe(
       resp => {
         this.homePokemon = resp;
+        this.onGetPokemon.emit();
       }
     );
   }

@@ -1,0 +1,45 @@
+jasmine
+	- a BDD (behavior-driven development) unit testing framework for JavaScript
+	- made by Pivotal Labs, open source
+	- works with plain JS, Node.js, Angular/TypeScript, Python, Ruby
+	- main keywords/setup
+		- describe('Name/description of test suite', () => {
+			it('should do something', () => {
+				expect(actualValue).toBe(expectedValue);
+				expect(actualValue.toBeTruthy();
+				expect(actualValue.toBeFalsy();
+				expect(actualValue).toEqual(expectedValue);
+				expect(actualValue).not.toBe(notExpectedValue);
+			}
+		});
+		- within your test suite (describe function), you can also have
+			- beforeEach, beforeAll, afterEach, afterAll
+			- like so:
+			beforeEach(() => { //something to happen before each spec });
+	- jasmine files are spec.ts or spec.js
+		- all syntax rules of ts/js apply in jasmine tests (i.e. variable scopes, etc.)
+	- if you want to only run specific tests:
+		- putting "fdescribe" rather than "describe" will run that test suite and only others that also have the f
+		- putting "fit" rather than "it" will run that test and only others that have the f
+		- the "f" stands for "focus"
+		- using "x" does the opposite: runs all tests except those with x
+			- xdescribe or xit
+			- these specs will be marked as "pending" in the test results
+protractor
+	E2E (end-to-end) testing framework built for Angular applications
+		- can be used for other JS or TS, but it was designed
+		  for Angular & works best there
+	uses Selenium as its web driver
+		Selenium automates a web browser
+		same locators as Selenium (slightly different syntax)
+			- e.g. by css, by id, by xpath, etc.
+		https://www.protractortest.org/#/locators
+		- Selenium doesn't need a server for Java,
+		  but Protractor does host a local server for Selenium
+	uses Karma as its engine
+		Karma manages tests, generates results, executes drivers
+		karma.conf.js - configuration file
+	protractor.conf.js - configuration file
+		- allows you to specify browser, location of spec files, etc.
+	the tests themselves just use Jasmine
+		- describe, beforeEach, it, expect, etc.

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { Pokemon } from '../models/pokemon';
 
 @Component({
@@ -8,6 +8,7 @@ import { Pokemon } from '../models/pokemon';
 })
 export class PokemonComponent implements OnInit {
   // the input decorator allows this field to be used as an attribute on the
+  // component directive in the parent component template
   @Input() pokemon: Pokemon;
   filterText: string;
 

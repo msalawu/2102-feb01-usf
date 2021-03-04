@@ -6,10 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'poke-app';
-  message: string = '';
-
-  showMessage() {
-    this.message = 'A Pokemon appeared!';
-  }
+  title = 'cat-app';
 }
