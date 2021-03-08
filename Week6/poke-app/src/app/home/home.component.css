@@ -1,0 +1,24 @@
+form {
+    display:flex;
+    justify-content: center;
+}
+
+input {
+    font-size:16pt;
+    padding:8px;
+    border-radius:13px;
+    width: 20%;
+}
+
+button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding:8px;
+    border-radius:13px;
+    margin-left:10px;
+    background-color: #FF99D0;
+    border-color: #DD77AA;
+}
+
+.top {
+    text-align: center;
+}

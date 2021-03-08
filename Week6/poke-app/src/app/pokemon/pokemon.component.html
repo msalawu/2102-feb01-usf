@@ -1,0 +1,38 @@
+<ng-container *ngIf="pokemon; else display">
+    <div class="pkmn">
+        <!-- ID: Name -->
+        <h2 id="pokemonHeader">{{ pokemon.id }}: {{ pokemon.name }}</h2>
+        <div class="lists">
+            <!-- Abilities: ul -->
+            <h4>Abilities</h4>
+            <ul>
+                <li *ngFor="let ability of pokemon.abilities">{{ ability.ability.name }}</li>
+            </ul>
+            <!-- Types: ul -->
+            <h4>Types</h4>
+            <ul>
+                <li appTypeColor *ngFor="let type of pokemon.types">{{ type.type.name }} </li>
+            </ul>
+        </div>
+        <!-- Sprites: images -->
+        <div class="sprites">
+            <ng-container *ngFor="let sprite of pokemon.sprites | keyvalue">
+                <img *ngIf="sprite.value && sprite.key !== 'other' && sprite.key !== 'versions'"
+                [src]="sprite.value" [alt]="sprite.key" [title]="sprite.key">
+            </ng-container>
+        </div>
+        <!-- Moves: ul -->
+        <div class="moves">
+            <h4>Moves</h4>
+            <label for="search">Search: </label>
+            <input name="search" type="text" [(ngModel)]="filterText">
+            <br>
+            <ul>
+                <li *ngFor="let move of pokemon.moves | moveFilter:filterText">{{ move.move.name }}</li>
+            </ul>
+        </div>
+    </div>
+</ng-container>
+<ng-template #display>
+    Sorry, no Pokemon to show.
+</ng-template>
