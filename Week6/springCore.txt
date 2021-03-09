@@ -1,0 +1,64 @@
+Spring
+	- Java AOP framework
+	- modular, lightweight
+		- a lightweight framework is one that doesn't require many
+		  changes to be made to an already existing application in
+		  order to implement it
+	- made by Rod Johnson in 2002 to replace EJB (Enterprise Java Beans)
+		- EJB was not lightweight - it required a lot of modification
+		  to a project in order to integrate it
+	- Spring modules
+		- SpringCore (IoC container, necessary for Spring)
+		- SpringWeb/MVC
+		- SpringAOP
+		- SpringORM
+		- SpringJDBCTemplate
+	- Spring projects
+		- SpringBoot
+		- SpringData/JPA
+		- SpringCloud
+		- SpringRoo
+		- SpringSecurity
+	- IoC Container
+		- "inversion of control," Spring manages the lifecycle of your beans
+		- you specify the beans and dependencies, and the IoC container manages them
+			- creates the beans (you never use the new keyword)
+			- handles dependency injection
+		- represented by the BeanFactory or ApplicationContext
+			- use the factory design pattern for creating beans
+			- BeanFactory is the older version, uses slightly less memory
+			- ApplicationContext is the newer (and better) version, features l10n & i18n
+	- dependency injection
+		- you specify dependencies (some entity that another entity requires in order to function)
+		- the IoC container finds the appropriate bean for that dependency, and injects it
+		- 4 types of dependency injection
+			- constructor injection: the dependency is placed/injected by calling an overloaded constructor
+				- this is used by Angular, and can be used by Spring
+				- this is also generally considered best practice with Spring
+			- setter injection: the dependency is placed/injected by calling the setter method
+				- this can be used by Spring
+			- field injection: the dependency is placed/injected directly into the field using reflection
+				- this can be used by Spring
+			- interface injection
+				- Spring doesn't have this
+		- @Autowired
+			- the annotation that tells Spring that this object is a dependency
+			- it can be placed in the relevant location for the type of injection you want to use
+				(over the field for field injection, over the setter for setter injection, etc.)
+		- dependency injection allows for loose coupling
+	- Stereotypes
+		- annotations for beans you want to be in IoC container (beans that you want managed by Spring)
+		- four main stereotypes
+			- @Component: standard managed bean; other stereotypes include this one implicitly
+			- @Controller: bean registered with SpringWeb, handles HTTP requests & responses
+			- @Service: stateless managed bean (it doesn't hold any sort of info, just performs tasks)
+			- @Repository: bean that retrieves data from a database (these are your DAOs)
+	- bean scopes
+		- singleton: one of this bean is created; all requests for the bean get this same bean
+		- prototype: every time the bean is requested, a new instance is created
+		- request: web-only, new bean instance for each HTTP request
+		- session: web-only, new bean instance for each HTTP session
+		- global: portlets-only, new bean instance per global HTTP session
+	- @Bean
+		- an annotation used over a method to specify that the returned object should be managed by the IoC container
+		- good for objects that we didn't write the class for

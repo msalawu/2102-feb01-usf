@@ -1,0 +1,40 @@
+SpringWeb/MVC
+	- follows the front controller design pattern + MVC design pattern
+		- Spring's DispatcherServlet acts as the Front Controller servlet
+		- Spring's HandlerMapper figures out where to delegate requests
+		  (gives the correct controller to the dispatcher servlet)
+		- Spring controllers handle the requests
+		- Spring also has the ViewResolver for server-side rendering
+	- setting up
+		- with xml - map the dispatcher servlet as a default servlet in
+		  web.xml (deployment descriptor)
+		- without xml - set up the servlet config @Configuration bean
+		  to map the dispatcher servlet
+	- controllers
+		- controllers are the objects that handle the http requests & responses the way that our delegates did
+		- get the @Controller stereotype
+			- @RestController stereotype: implicitly places @ResponseBody over all methods
+			- @ResponseBody: the method is not returning a view (is returning a resource)
+		- @RequestMapping(path="/login", method=RequestMethod.POST)
+		- @GetMapping, @PostMapping, @PutMapping, etc.
+			- @GetMapping(path="/login")
+		- @CrossOrigin: goes at the top of the class & specifies locations that we can receive requests from
+			- @CrossOrigin(origins="http://localhost:4200") if we want our local Angular app to be able to send requests
+			- also has allowCredentials, etc. for being more specific with CORS rules
+		- @RequestBody: goes in front of a parameter, allows us to get the object that is being sent in the request body
+			- specifically for JSON, XML, etc.
+		- @RequestParam: goes in front of a parameter, allows us to retrieve form data from a request
+			- @RequestParam("user") String username
+			- works for login encoded form data
+		- @PathVariable: goes in front of a parameter, allows us to retrieve info from the URI/path that was sent
+			- @GetMapping(path="pokemon/{id}")
+			- @PathVariable("id") Integer id
+		- to use/access a session in your controller, just put an HttpSession object in your parameters for the method
+			- this tells Spring to pass the session object into this method
+			- then use it as normal (session.setParameter("person", p))
+	- ResponseEntity<T>
+		- this basically represents the HTTP response that we are sending back
+		- ResponseEntity.ok().build();
+		- ResponseEntity.status(404).build();
+		- ResponseEntity.notFound().build();
+		- ResponseEntity.ok(obj);

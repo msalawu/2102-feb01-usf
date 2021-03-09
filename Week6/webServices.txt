@@ -1,0 +1,81 @@
+Web Services
+	- Service-Oriented Architecture (SOA)
+		- software design where services are provided to each other over a network
+			- with Web Services, this network is the internet
+		- 4 properties in SOA
+			1. the app logically represents a business activity w/ a specified outcome
+			2. self-contained
+			3. black box for consumers
+			4. may consist of underlying services (may be able to be broken down)
+		- business-to-business interactions (B2B)
+	- the biggest types of web services are REST & SOAP
+REST
+	- REpresentational State Transfer
+	- a web service architecture designed by Roy Fielding
+	- REST specifically uses HTTP/HTTPS as its protocol
+	- it can transport any datatype (JSON, XML, plain text, etc)
+	- transfer the state of a representation of an object to a database
+	- a RESTful web service must meet the following constraints:
+		1. client-server architecture: the front end and back end
+		   of the application are two separate applications (i.e.
+		   Java back end, Angular/React/etc. front end)
+		2. statelessness: the server does not store client context
+		   between requests, all necessary information is sent to
+		   the server in every request from the front end
+		3. cacheability: particular responses from the back end are
+		   able to be cached for easy reuse, especially if they are
+		   used often
+		4. layered system: the user cannot tell whether there are
+		   any intermediaries between them and the database
+		5. code on demand: OPTIONAL. where necessary, the back end
+		   can send scripts to offer additional functionality to
+		   the front end as a response.
+		6. uniform interface: requests/responses use the following
+		   patterns:
+			i. URI model: requests are sent in a particular
+			   format: /collection/identifier
+			ii. resources are manipulated through representations,
+			   i.e. when changes are made, they are made to the
+			   representations being sent, rather than in the
+			   back end after certain directions were given.
+			iii. self-descriptive messages: a GET request to
+			   "/cat" should get the cats.
+			iv. HATEOAS: hypermedia as the engine of application
+			   state. when a resource has a lot of information,
+			   it can include URIs so that the client can send
+			   requests to those URIs for further information.
+SOAP
+	- simple object access protocol
+	- whereas REST is an architectural style, SOAP is a protocol
+	- SOAP can be used with any type of transport protocol (HTTP, FTP, SMTP, etc.)
+	- SOAP messages are specifically XML
+	- considered to be more structured due to the contract
+		- WSDL: web service definition language
+		- the WSDL is the "contract" that describes how to interact with the service
+			- essentially an abstraction of the service
+		- two different approaches regarding the contract
+			- contract-first: write the WSDL then generate the service from it
+			- contract-last: write the service then generate the WSDL
+			- either way, the WSDL is always necessary for a SOAP service
+	- apache CXF can be used for dealing with SOAP services (WSDL creation, XML messages, etc.)
+		- JAX-WS (web service) as opposed to JAX-RS (rest service)
+	- WSDL tags
+		- definitions: root tag
+		- types: defines objects
+		- message: defines messages that the service can send/receive
+		- portType: list of operations that can be done on the service
+		- operation: defines what happens with the messages (how to use them)
+		- binding: defines how messages are sent/received (transport protocol, encoding info, etc.)
+		- service: defines our endpoints
+	- message tags
+		- Envelope: root tag
+		- Header: metadata, mustUnderstand
+			- any number of these can exist (0 or more)
+		- Body: message data
+		- Fault:
+			- 0 or 1 in the Body tag
+			- 4 error types
+				- mustUnderstand error (when the service didn't understand the message that had the mustUnderstand clause)
+				- version mismatch
+				- client error
+				- server error
