@@ -3,7 +3,7 @@ SpringData/JPA
 	it works through the JPA
 		- we still use JPA annotations for object mapping
 		- we use Hibernate as an adapter, or as an implementation of the JPA
-	set-up beans for the IoC container
+	set-up beans for the IoC container (when using SpringData with xml config without SpringBoot)
 		- 4 important beans
 			- set up database info
 			- set up Hibernate as the JPA adapter
