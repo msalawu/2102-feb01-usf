@@ -1,0 +1,19 @@
+SpringBoot
+	- philosophy: convention over configuration
+		- reduce configuration by assuming common conventions
+	- a Spring project for making it easier to build enterprise web applications
+	- your configuration file with SpringBoot is application.properties or application.yml
+		- this is where configurations go that can't be assumed
+		- your database connection info
+		- JPA dialect
+		- etc.
+	- the main method class goes in a parent package of everything else (Spring beans)
+		- @SpringBootApplication goes at the top of the class
+		- in the main method, call SpringApplication.run(CatAppMain.class, args)
+		- other things that can go in this class are just general configuration, e.g. CORS configuration
+	- DevTools
+		- something that can be included with SpringBoot that makes development easier
+		- for example, it restarts the server every time you make changes to files
+	- actuator
+		- gives RESTful endpoints to your application
+		- /health, /metrics, /beans, /info, etc.

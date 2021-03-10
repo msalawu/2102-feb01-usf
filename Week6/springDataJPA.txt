@@ -1,0 +1,36 @@
+SpringData/JPA
+	allows us to access the database with less code
+	it works through the JPA
+		- we still use JPA annotations for object mapping
+		- we use Hibernate as an adapter, or as an implementation of the JPA
+	set-up beans for the IoC container
+		- 4 important beans
+			- set up database info
+			- set up Hibernate as the JPA adapter
+			- set up the Entity Manager Factory
+			- set up the Transaction Manager
+		- specify where DAOs/repositories are
+			- in xml:
+			  <jpa:repositories base-package="com.revature.data"/>
+		- enable annotation-based transaction management
+			- in xml:
+			  <tx:annotation-driven/>
+	abstraction of the ORM
+		- it writes the necessary method implementations for us
+		- creating custom methods allows you to use naming conventions for Spring to write the implementation
+			- public Person findByUsernameAndPassword(String username, String password);
+	all we create are DAO interfaces that extend JpaRepository<ObjectType, PrimaryKeyType>
+		- we use the service layer where we inject Spring's implementations of the DAOs as dependencies
+	@Transactional(readOnly=false, propagation=Propagation.REQUIRED)
+		- the transactional annotation goes above a service class or method
+		- specifies whether the class/method should affect the database (readOnly=true means it won't change anything)
+		- specifies transaction propagation (how the method responds when called with or without another transaction)
+	transaction propagation levels
+		- MANDATORY: throws exception if called without a tx
+		- REQUIRED: creates a new tx if called without a tx
+		- REQUIRES_NEW: creates a new tx, suspends current one if called with a tx
+		- SUPPORTS: executes non-transactionally if called without a tx, executes within current tx if called with one
+		- NOT_SUPPORTED: suspends current tx if called with one, executes non-transactionally
+		- NEVER: executes non-transactionally, throws exception if called with a tx
+		- NESTED: within a nested a transaction, not enabled in Spring by default
+		- allow you to enforce ACID properties with your transactions

@@ -1,0 +1,24 @@
+SpringAOP
+	- AOP: aspect-oriented programming
+		- aspect: an entity which addresses a cross-cutting concern via advice
+			- typically this is a class with @Aspect annotation
+		- cross-cutting concern: a problem/procedure that affects multiple entities
+			- for example: logging, security, session management, etc.
+		- advice: entity that actually modifies the code
+			- typically this is a method within the aspect class
+		- joinpoint: any code that can be modified by advice (can be advised)
+			- in Spring, this is any method that is on a Spring bean other than constructors (in the IoC container)
+		- pointcut: expression that targets specific joinpoints
+			- @Pointcut("execution(returnType com.revature.packageName.ClassName.methodName (parameters))")
+			- @Pointcut("execution(* com.revature..* (..))")
+		- hook: an empty method that serves as a target for an annotation
+	- 5 types of advice
+		- @Before: happens before the advised method executes
+		- @After: happens after the advised method executes
+		- @AfterReturning: happens after the advised method executes IF it returns successfully (doesn't throw an exception/error)
+		- @AfterThrowing: happens after the advised method executes IF it throws an exception/error (doesn't return succesfully)
+		- @Around: "most powerful" happens before the advised method, tells the advised method when to execute, then continues after the method
+			- can change the return type (even to/from void), we can prevent the method from executing, etc.
+	- AOP (in general) can occur at compile time, runtime, or loadtime
+		- SpringAOP uses runtime
+	- SpringAOP uses AspectJ (an AOP Java extension from Eclipse)
