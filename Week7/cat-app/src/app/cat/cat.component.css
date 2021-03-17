@@ -1,0 +1,13 @@
+.cat {
+    padding: 5px 25px 15px 25px;
+    margin: 5px;
+    border-radius:24px;
+    border-width:0px 0px 8px 0px;
+    border-style:solid;
+    border-color:#ACCEBD;
+    background-color:#C3E8D4;
+}
+
+button {
+    margin: 5px auto;
+}

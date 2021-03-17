@@ -15,7 +15,7 @@ export class UserService {
   constructor(private urlServ: UrlService, private http: HttpClient) { }
 
   checkLogin(): Observable<Person> {
-    return this.http.get(this.userUrl).pipe(
+    return this.http.get(this.userUrl, {withCredentials:true}).pipe(
       map(resp => resp as Person)
     );
   }
@@ -25,8 +25,12 @@ export class UserService {
       username:username,
       password:password
     }
-    return this.http.put(this.userUrl, loginInfo).pipe(
+    return this.http.put(this.userUrl, loginInfo, {withCredentials:true}).pipe(
       map(resp => resp as Person)
     );
+  }
+
+  logOut(): Observable<any> {
+    return this.http.delete(this.userUrl, {withCredentials:true}).pipe();
   }
 }

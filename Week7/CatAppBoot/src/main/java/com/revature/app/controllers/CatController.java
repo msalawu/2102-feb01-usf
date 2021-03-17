@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.revature.app.beans.Cat;
 import com.revature.app.services.CatService;
 import com.revature.app.services.PersonService;
+import com.revature.app.beans.SpecialNeed;
 import com.revature.app.beans.Breed;
 import com.revature.app.beans.Person;
 import com.revature.app.exceptions.CatAlreadyAdoptedException;
@@ -109,5 +110,11 @@ public class CatController {
 	public ResponseEntity<Set<Breed>> getBreeds() {
 		Set<Breed> breeds = catServ.getAllBreeds();
 		return ResponseEntity.ok(breeds);
+	}
+
+	@GetMapping(path="/specialneeds")
+	public ResponseEntity<Set<SpecialNeed>> getSpecialNeeds() {
+		Set<SpecialNeed> needs = catServ.getAllSpecialNeeds();
+		return ResponseEntity.ok(needs);
 	}
 }

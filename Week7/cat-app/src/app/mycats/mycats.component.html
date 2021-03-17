@@ -1,1 +1,11 @@
-<p>mycats works!</p>
+<h2>My Cats</h2>
+<div class="cats">
+    <ng-container *ngIf="loggedUser; else none">
+        <ng-container *ngFor="let cat of loggedUser.cats">
+            <app-cat [cat]="cat" (adoptedCat)="adopt(cat)"></app-cat>
+        </ng-container>
+    </ng-container>
+    <ng-template #none>
+        You're not logged in, so there are no cats to see here.
+    </ng-template>
+</div>

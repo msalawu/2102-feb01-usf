@@ -4,7 +4,7 @@ body {
     color:#1A554F;
 }
 
-input, button {
+input, button, select {
     border-radius:12px;
     border:1px solid #1A554F;
     padding:5px;

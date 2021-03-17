@@ -5,6 +5,8 @@ import { map } from 'rxjs/operators';
 import { Cat } from '../models/cat';
 import { UrlService } from './url.service';
 import { Person } from '../models/person';
+import { Breed } from '../models/breed';
+import { SpecialNeed } from '../models/special-need';
 
 @Injectable({
   providedIn: 'root'
@@ -28,5 +30,19 @@ export class CatService {
 
   adoptCat(cat: Cat): Observable<any> {
     return this.http.get(this.url + 'adopt/' + cat.id, {withCredentials:true}).pipe();
+  }
+
+  getBreeds(): Observable<Breed[]> {
+    return this.http.get(this.url + 'breeds/', {withCredentials:true}).pipe(
+      map(
+        resp => resp as Breed[]
+      )
+    );
+  }
+
+  getSpecialNeeds(): Observable<SpecialNeed[]> {
+    return this.http.get(this.url + 'specialneeds/', {withCredentials:true}).pipe(
+      map( resp => resp as SpecialNeed[] )
+    );
   }
 }
