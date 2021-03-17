@@ -1,0 +1,25 @@
+<h2>Available Cats</h2>
+<ng-container *ngFor="let cat of availCats">
+    <app-cat [cat]="cat" (adoptedCat)="adopt(cat)"></app-cat>
+</ng-container>
+<ng-container *ngIf="loggedUser.role.name==='Employee'">
+    <div class="cat">
+        <label for="name">Name: </label><input [(ngModel)]="newCat.name" name="name" type="text" />
+        <label for="age">Age: </label><input [(ngModel)]="newCat.age" name="age" type="number" />
+        <label for="breed">Breed: </label>
+        <select name="breed">
+            <!-- get breeds -->
+            <option>Placeholder</option>
+        </select>
+        <label for="specialneeds">Special Needs: </label>
+        <select name="specialneeds">
+            <!-- get special needs -->
+            <option>Placeholder</option>
+        </select>
+        <ul>
+            <li *ngFor="let need of newCat.specialNeeds">{{ need.name }}</li>
+        </ul>
+        <br>
+        <button type="button" (click)="addCat()">Submit</button>
+    </div>
+</ng-container>

@@ -1,0 +1,52 @@
+body {
+    background-color:#CCEEDD;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#1A554F;
+}
+
+input, button {
+    border-radius:12px;
+    border:1px solid #1A554F;
+    padding:5px;
+    font-size:14pt;
+}
+
+button {
+    border-radius:12px;
+    background-color:#ACCEBD;
+    padding: 5px 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button {
+    font-weight:bold;
+    color:#1A554F;
+}
+
+button:hover, a:hover {
+    border-radius:12px;
+    background-color:#9CBEAD;
+}
+
+button:active {
+    border-radius:12px;
+    border-width:2px;
+    background-color:#8CAE9D;
+}
+
+a {
+    border-radius:12px;
+    padding: 5px 10px;
+    text-decoration:none;
+    color:#1A554F;
+}
+
+a:active {
+    border-width: 2px 1px 1px 2px;
+    border-style:solid;
+    border-color:#509189;
+}
+
+main {
+    padding:24px;
+}

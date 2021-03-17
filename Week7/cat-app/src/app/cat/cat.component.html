@@ -1,0 +1,16 @@
+<div class="cat">
+    <h4>{{ cat.name }}</h4>
+    Age: {{ cat.age }}<br>
+    Breed: {{ cat.breed.name }}<br>
+    Special Needs:
+    <ng-container *ngIf="cat.specialNeeds.length > 0; else empty">
+        <br>
+        <ul>
+            <li *ngFor="let need of cat.specialNeeds">{{ need.name }}</li>
+        </ul>
+    </ng-container>
+    <ng-template #empty> None</ng-template>
+    <br>
+    <button *ngIf="cat.status.name === 'Available'" type="button" (click)="emitAdopt()">Adopt</button><br>
+    <button type="button" (click)="petCat()">Pet</button>
+</div>

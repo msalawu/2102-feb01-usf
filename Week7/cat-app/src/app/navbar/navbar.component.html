@@ -1,0 +1,25 @@
+<div class="nav">
+    <ul>
+        <li><strong><a routerLink="home">CatApp</a></strong></li>
+        <li><a routerLink="cats">Available Cats</a></li>
+        <li><a routerLink="mycats">My Cats</a></li>
+        <ng-container *ngIf="!loggedUser; else user">
+            <li>
+                <form>
+                    <label for="user">Username: </label>
+                    <input type="text" [(ngModel)]="username" name="user">
+                    <label for="pass"> Password: </label>
+                    <input type="password" [(ngModel)]="password" name="pass">
+                    &nbsp;
+                    <button type="button" (click)="sendLogin()">Log In</button>
+                </form>
+            </li>
+        </ng-container>
+        <ng-template #user>
+            <li>
+                {{ loggedUser.username }} 
+                <button type="button" (click)="sendLogout()">Log Out</button>
+            </li>
+        </ng-template>
+    </ul>
+</div>

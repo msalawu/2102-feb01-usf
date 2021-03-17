@@ -1,0 +1,11 @@
+<main>
+    <h2>Welcome to Cat App!</h2>
+    <p>Adopt cats that need loving homes and track them all in one app. Fostering coming soon!</p>
+
+    <ul>
+        <li><a>Available Cats</a></li>
+        <ng-container *ngIf="loggedUser; else showLogin"><li><a>My Cats</a></li></ng-container>
+        <ng-template #showLogin><li><a>Log In or Register</a></li></ng-template>
+        <ng-container *ngIf="loggedUser && loggedUser.role.name === 'Employee'"><li><a>Admin</a></li></ng-container>
+    </ul>
+</main>
